@@ -32,6 +32,10 @@ warnings.filterwarnings("ignore")
 # PURE MSigDB HALLMARK GENE SETS (v2023.2, human, embedded for offline HPC use)
 # ─────────────────────────────────────────────────────────────────────────────
 
+# ⚠️ LEGACY (non-canonical): these 8 hardcoded sets were used for pre-Jul2026
+# runs (poster numbers). They differ substantially from canonical MSigDB v2023.2
+# (see HALLMARK_GENE_SETS_50 at end of file). Kept for reproducing old results only.
+# All NEW work should use H50 / get_anchor_config_v2("H50").
 HALLMARK_GENE_SETS = {
 
     "HALLMARK_INFLAMMATORY_RESPONSE": [
@@ -191,6 +195,18 @@ HALLMARK_GENE_SETS = {
 # ─────────────────────────────────────────────────────────────────────────────
 
 CONFIGS = {
+    "ucec_matched": [
+        "HALLMARK_DNA_REPAIR",
+        "HALLMARK_E2F_TARGETS",
+        "HALLMARK_MYC_TARGETS_V1",
+        "HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+    ],
+    "decorr_M4": [
+        "HALLMARK_E2F_TARGETS",
+        "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+        "HALLMARK_INFLAMMATORY_RESPONSE",
+        "HALLMARK_MYC_TARGETS_V1"
+    ],
     "M4": ["HALLMARK_INFLAMMATORY_RESPONSE","HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
            "HALLMARK_APOPTOSIS","HALLMARK_E2F_TARGETS"],
     "M5_pi3k": ["HALLMARK_INFLAMMATORY_RESPONSE","HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
@@ -320,7 +336,7 @@ def load_or_compute_gsva_anchors(expr_df, cache_path="gsva_anchors_cache.pkl",
         with open(cache_path, "rb") as f:
             return pickle.load(f)
 
-    gene_sets = get_anchor_config(mode)
+    gene_sets = get_anchor_config_v2(mode)  # H50-aware (falls back to old for M4-M8)
     anchors = compute_gsva_anchors(expr_df, gene_sets=gene_sets, **kwargs)
 
     with open(cache_path, "wb") as f:
@@ -389,3 +405,38 @@ if __name__ == "__main__":
     print("\nUsage in BIOS:")
     print("  from gsva_anchors import load_or_compute_gsva_anchors")
     print("  anchors = load_or_compute_gsva_anchors(expr_df, mode='M8')")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FULL HALLMARK-50 SUPPORT (additive — hardcoded 8 above untouched)
+# ─────────────────────────────────────────────────────────────────────────────
+def load_hallmark_gmt(path="data/genesets/h.all.v2025.1.Hs.symbols.gmt"):
+    """Parse MSigDB Hallmark GMT -> {PATHWAY: [genes]}. Universal definitions."""
+    sets = {}
+    with open(path) as fh:
+        for line in fh:
+            parts = line.rstrip("\n").split("\t")
+            if len(parts) < 3:
+                continue
+            name, _url, *genes = parts
+            sets[name] = [g for g in genes if g]
+    return sets
+
+try:
+    HALLMARK_GENE_SETS_50 = load_hallmark_gmt()
+except Exception as _e:
+    HALLMARK_GENE_SETS_50 = {}
+    print(f"[gsva_anchors] H50 GMT not loaded: {_e}")
+
+# register H50 config (all 50)
+CONFIGS["H50"] = list(HALLMARK_GENE_SETS_50.keys())
+
+def get_anchor_config_v2(mode):
+    """H50-aware resolver: H50 pulls from the full 50-set dict; other modes
+    fall back to the original get_anchor_config (hardcoded 8)."""
+    if mode == "H50":
+        return dict(HALLMARK_GENE_SETS_50)
+    if isinstance(mode, list):
+        pool = HALLMARK_GENE_SETS_50 if all(k in HALLMARK_GENE_SETS_50 for k in mode) else HALLMARK_GENE_SETS
+        return {k: pool[k] for k in mode}
+    return get_anchor_config(mode)

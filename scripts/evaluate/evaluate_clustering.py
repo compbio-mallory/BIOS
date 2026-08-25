@@ -47,6 +47,11 @@ def load_model(model_path, feature_dim, cluster_num, device):
     # NEW: read from checkpoint — saved by train_bioanchor.py
     bio_dim   = checkpoint.get('bio_dim',   14)    # fallback 14 if old checkpoint
     head_type = checkpoint.get('head_type', 'mlp') # fallback mlp if old checkpoint
+    # n_anchors: infer from saved attention_query weights if present, else = bio_dim
+    if 'bio_head.anchor_queries' in checkpoint['net']:
+        n_anchors = checkpoint['net']['bio_head.anchor_queries'].shape[0]
+    else:
+        n_anchors = checkpoint.get('n_anchors', bio_dim)
 
     ae = AE(hid_dim=feature_dim, bio_dim=bio_dim)
 
@@ -57,7 +62,7 @@ def load_model(model_path, feature_dim, cluster_num, device):
         feature_dim = feature_dim,
         class_num   = cluster_num,
         bio_dim     = bio_dim,
-        n_anchors   = bio_dim,
+        n_anchors   = n_anchors,
         head_type   = head_type,
     )
 

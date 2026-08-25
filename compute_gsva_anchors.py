@@ -86,10 +86,16 @@ def save_anchor_csv(anchors_df, out_file):
                  index = patient IDs (TCGA sample IDs)
     """
     out_df = anchors_df.copy()
-    # Keep only primary tumor samples (-01 suffix) before truncating
-    # This prevents duplicates when multiple sample types exist per patient
-    out_df = out_df[out_df.index.str.endswith('-01')]
-    out_df.index = out_df.index.str[:12]  # TCGA-AR-A5QQ-01 → TCGA-AR-A5QQ
+    # Keep tumor samples: primary (-01) preferred; metastatic (-06) as fallback
+    # for patients with no primary (essential for SKCM, where ~80% of TCGA
+    # samples are metastatic). Other cancers are unaffected: -01 wins when present.
+    tumor = out_df[out_df.index.str.endswith(('-01', '-06'))].copy()
+    tumor['_pt'] = tumor.index.str[:12]
+    tumor['_pri'] = tumor.index.str.endswith('-01')
+    tumor = (tumor.sort_values('_pri', ascending=False)
+                  .drop_duplicates('_pt', keep='first'))
+    out_df = tumor.set_index('_pt').drop(columns=['_pri'])
+    out_df.index.name = None
     out_df.index.name = 'patient_id'
     out_df = out_df.reset_index()
     out_df.to_csv(out_file, index=False)

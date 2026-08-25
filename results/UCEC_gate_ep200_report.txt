@@ -1,0 +1,32 @@
+BIOS v3 pathway gate — UCEC
+checkpoint: save/model_ucec_v3_H40/checkpoint_200.tar
+K=4  A=40  uniform weight=0.0250
+mean gate entropy: 0.044 / max 3.689 (1% of uniform)
+
+TEST 1 — differentiation across subtypes (weak test)
+  mean pairwise cosine between cluster gates: 0.026
+  top-5 sets identical across all clusters: False
+  verdict: PASS
+
+TEST 2 — agreement with independent enrichment (the real test)
+  cluster 0: spearman rho = -0.106
+  cluster 1: spearman rho = 0.005
+  cluster 2: spearman rho = 0.240
+  cluster 3: spearman rho = 0.302
+  mean rho = 0.110
+  verdict: FAIL
+
+Expected biology for UCEC:
+  proliferative/serous/CN-high: E2F_TARGETS, G2M_CHECKPOINT, MYC_TARGETS_V1, MITOTIC_SPINDLE
+  endometrioid/CN-low: ESTROGEN_RESPONSE_EARLY, ESTROGEN_RESPONSE_LATE
+  MSI/POLE: PI3K_AKT_MTOR_SIGNALING, MTORC1_SIGNALING, ALLOGRAFT_REJECTION, INTERFERON_GAMMA_RESPONSE
+
+Top pathways per cluster:
+  cluster 0: ESTROGEN_RESPONSE_EARLY (39.3x), ANDROGEN_RESPONSE (0.6x), DNA_REPAIR (0.0x), MYC_TARGETS_V2 (0.0x), KRAS_SIGNALING_UP (0.0x)
+  cluster 1: ANDROGEN_RESPONSE (37.5x), DNA_REPAIR (1.7x), ESTROGEN_RESPONSE_EARLY (0.7x), MYC_TARGETS_V2 (0.0x), KRAS_SIGNALING_UP (0.0x)
+  cluster 2: DNA_REPAIR (37.3x), ANDROGEN_RESPONSE (1.4x), NOTCH_SIGNALING (1.1x), ESTROGEN_RESPONSE_EARLY (0.1x), MYC_TARGETS_V2 (0.0x)
+  cluster 3: NOTCH_SIGNALING (39.9x), DNA_REPAIR (0.0x), INFLAMMATORY_RESPONSE (0.0x), MYC_TARGETS_V2 (0.0x), APOPTOSIS (0.0x)
+
+If TEST 2 fails: attention is exhausted. Report the per-cluster
+enrichment result instead — it recovers known biology at q=1e-50
+in both cancers and does not depend on the attention head.

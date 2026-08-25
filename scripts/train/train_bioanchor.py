@@ -58,7 +58,7 @@ from modules import network, contrastive_loss
 from modules.ae import AE
 from utils import yaml_config_hook
 from dataloader import get_feature
-
+from modules.bio_anchor_head_v3 import gate_entropy_loss, gate_diversity_loss
 
 # ══════════════════════════════════════════════════════════════════
 #  Inference  (evaluation pass — no gradients)
@@ -122,12 +122,15 @@ def save_model(args, model, optimizer, current_epoch):
     """
     os.makedirs(args.model_path, exist_ok=True)
     out = os.path.join(args.model_path, f"checkpoint_{current_epoch}.tar")
+    
     torch.save({
-        'net':       model.state_dict(),   # includes bio_head weights (it's inside model now)
+        'net':       model.state_dict(),
         'optimizer': optimizer.state_dict(),
         'epoch':     current_epoch,
-        'head_type': args.head_type,       # self-describing checkpoint
-        'bio_dim':   args.bio_dim,         # save so you know what architecture this was
+        'head_type': args.head_type,
+        'bio_dim':   args.bio_dim,
+        'n_clusters': args.cluster_number,
+        'n_anchors':  args.n_anchors,
     }, out)
 
 
@@ -150,11 +153,19 @@ if __name__ == "__main__":
     parser.add_argument("--cluster_number",        type=int,   required=True)
     parser.add_argument("--bio_dim",               type=int,   required=True,
                         help="Number of bio-anchor dimensions. Must match your CSV.")
-    parser.add_argument("--head_type",             type=str,   required=True,
-                        choices=['linear', 'mlp', 'attention'],
-                        help="Bio-anchor head: linear | mlp | attention")
+    parser.add_argument("--n_anchors",             type=int,   default=None,
+                        help="Number of anchors to predict (CSV columns). Defaults to bio_dim if unset.")
     parser.add_argument("--bio_anchor_file",       type=str,   required=True,
                         help="Path to bio-anchors CSV.")
+    parser.add_argument("--lambda_entropy", type=float, default=0.1,
+                        help="Weight for attention-entropy penalty (v2 head).")
+    parser.add_argument("--head_type",             type=str,   required=True,
+                        choices=['linear', 'mlp', 'attention',
+                                 'attention_query', 'attention_query_v2',
+                                 'attention_query_v3'],
+                        help="Bio-anchor head variant")
+    parser.add_argument("--lambda_div", type=float, default=0.02,
+                        help="Weight for per-cluster gate diversity (v3 head).")
     parser.add_argument("--lambda_bio",            type=float, default=0.1,
                         help="Weight for bio-anchor loss. 0.1 validated optimal.")
     parser.add_argument("--batch_size",            type=int,   default=32)
@@ -164,6 +175,8 @@ if __name__ == "__main__":
                         help="Hidden dim for MLP head only.")
 
     args = parser.parse_args()
+    if args.n_anchors is None:
+        args.n_anchors = args.bio_dim
     os.makedirs(args.model_path, exist_ok=True)
 
     # ── reproducibility ─────────────────────────────────────────
@@ -201,7 +214,7 @@ if __name__ == "__main__":
         feature_dim  = args.feature_dim,
         class_num    = args.cluster_number,
         bio_dim      = args.bio_dim,
-        n_anchors    = args.bio_dim,    # always == bio_dim in our setup
+        n_anchors    = args.n_anchors,  # decoupled: can differ from bio_dim (e.g. 32->50)
         head_type    = args.head_type,
     )
 
@@ -273,24 +286,44 @@ if __name__ == "__main__":
 
             # get z_bio_j for the second view bio loss
             # call ae directly — avoids running the full forward pass again
-            _, z_bio_j, _ = model.ae(x_j)
+            h_j, z_bio_j, _ = model.ae(x_j)
 
             # ── contrastive losses (unchanged from old scripts) ──
             loss_instance = criterion_instance(z_i_proj, z_j_proj)
             loss_cluster  = criterion_cluster(c_i, c_j)
 
             # ── bio-anchor loss ──
-            loss_bio = torch.tensor(0.0).to(device)
+            loss_bio  = torch.tensor(0.0).to(device)
+            loss_gate = torch.tensor(0.0).to(device)
+
             if bio_anchors is not None:
-                b_hat_j  = model.bio_head(z_bio_j)
-                # average MSE over both augmented views — same as old scripts
+                b_hat_j, aux_j = model.bio_predict(h_j, z_bio_j)
                 loss_bio = (
                     F.mse_loss(b_hat_i, bio_anchors) +
                     F.mse_loss(b_hat_j, bio_anchors)
                 ) / 2
 
+                if model.is_v3():
+                    aux_i = model.last_bio_aux_i
+                    ent = (gate_entropy_loss(aux_i['gate']) +
+                           gate_entropy_loss(aux_j['gate'])) / 2
+                    div = (gate_diversity_loss(aux_i['gate'], aux_i['c0'],
+                                               args.cluster_number) +
+                           gate_diversity_loss(aux_j['gate'], aux_j['c0'],
+                                               args.cluster_number)) / 2
+                    # NOT scaled by lambda_bio — see note below
+                    loss_gate = args.lambda_entropy * ent + args.lambda_div * div
+                    last_ent, last_div = ent.item(), div.item()
+                else:
+                    # legacy v2 path, unchanged behaviour
+                    if getattr(model.bio_head, 'last_attn_entropy', None) is not None:
+                        loss_bio = loss_bio + args.lambda_entropy * model.bio_head.last_attn_entropy
+                    last_ent, last_div = float('nan'), float('nan')
+            else:
+                last_ent, last_div = float('nan'), float('nan')
+
             # ── total loss ──
-            loss = loss_instance + loss_cluster + args.lambda_bio * loss_bio
+            loss = loss_instance + loss_cluster + args.lambda_bio * loss_bio + loss_gate
 
             # OLD: optimizer.zero_grad() + bio_optimizer.zero_grad()
             # NEW: single zero_grad covers everything
@@ -300,7 +333,8 @@ if __name__ == "__main__":
 
             if step % 50 == 0:
                 print(f"Epoch [{epoch}/{args.epochs}] Step [{step}/{len(DL)}] "
-                      f"Loss: {loss.item():.4f} Bio: {loss_bio.item():.4f}")
+                      f"Loss: {loss.item():.4f} Bio: {loss_bio.item():.4f} "
+                      f"GateEnt: {last_ent:.4f} GateDiv: {last_div:.4f}")
 
             loss_epoch += loss.item()
 
@@ -320,7 +354,7 @@ if __name__ == "__main__":
             all_preds.extend(c.cpu().numpy())
 
         # load ground truth
-        gt_path = f'data/ground_truth/ground_truth_BRCA.csv'
+        gt_path = f'data/ground_truth/ground_truth_{args.cancer_type}.csv'
         if os.path.exists(gt_path):
             gt = pd.read_csv(gt_path)
             preds = np.array(all_preds)
@@ -336,6 +370,8 @@ if __name__ == "__main__":
                         'epoch':     epoch,
                         'head_type': args.head_type,
                         'bio_dim':   args.bio_dim,
+                        'n_clusters': args.cluster_number,
+                        'n_anchors':  args.n_anchors,
                         'v_measure': v,
                     }, os.path.join(args.model_path, 'best_checkpoint.tar'))
                     print(f"  *** New best V={v:.4f} at epoch {epoch} — saved best_checkpoint.tar")

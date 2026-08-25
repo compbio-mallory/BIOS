@@ -3,6 +3,7 @@ import numpy as np
 import torch
 import argparse
 from modules import network_OLD, contrastive_loss
+from modules import network_OLD as network  # alias: script calls network.Network()
 from modules.network import BioAnchorHead
 from utils import yaml_config_hook
 from torch import optim
