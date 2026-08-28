@@ -14,8 +14,11 @@ export OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_TH
 : "${CANCER:?pass --export=CANCER=...}"
 : "${K:?pass --export=K=...}"
 HEAD=${HEAD:-linear}
-ANCHORS=data/bio_anchors/bio_anchors_${CANCER}_gsva_H40.csv
-MODELDIR=save/model_${CANCER}_${HEAD}_H40
+BIODIM=${BIODIM:-16}
+ANCHOR_MODE=${ANCHOR_MODE:-gsva_H40}
+NANCH=${NANCH:-40}
+ANCHORS=data/bio_anchors/bio_anchors_${CANCER}_${ANCHOR_MODE}.csv
+MODELDIR=save/model_${CANCER}_${HEAD}_${ANCHOR_MODE}_b${BIODIM}
 mkdir -p logs $MODELDIR results
 
 echo "=== gate: anchors cover omics ==="
@@ -32,7 +35,7 @@ echo "=== $CANCER | head=$HEAD | k=$K | $(date) ==="
 $PYBIN scripts/train/train_bioanchor.py \
     --head_type $HEAD --cancer_type $CANCER \
     --batch_size 64 --cluster_number $K --epochs 200 \
-    --bio_dim 16 --n_anchors 40 --lambda_bio 0.1 \
+    --bio_dim $BIODIM --n_anchors $NANCH --lambda_bio 0.1 \
     --bio_anchor_file $ANCHORS --model_path $MODELDIR
 echo "=== DONE $(date) ==="
 
