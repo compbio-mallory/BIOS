@@ -15,6 +15,7 @@ export OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_TH
 : "${K:?pass --export=K=...}"
 HEAD=${HEAD:-linear}
 BIODIM=${BIODIM:-16}
+EPOCHS=${EPOCHS:-200}
 ANCHOR_MODE=${ANCHOR_MODE:-gsva_H40}
 NANCH=${NANCH:-40}
 ANCHORS=data/bio_anchors/bio_anchors_${CANCER}_${ANCHOR_MODE}.csv
@@ -34,7 +35,7 @@ print('gate passed:', len(cn.columns), 'patients')
 echo "=== $CANCER | head=$HEAD | k=$K | $(date) ==="
 $PYBIN scripts/train/train_bioanchor.py \
     --head_type $HEAD --cancer_type $CANCER \
-    --batch_size 64 --cluster_number $K --epochs 200 \
+    --batch_size 64 --cluster_number $K --epochs $EPOCHS \
     --bio_dim $BIODIM --n_anchors $NANCH --lambda_bio 0.1 \
     --bio_anchor_file $ANCHORS --model_path $MODELDIR
 echo "=== DONE $(date) ==="

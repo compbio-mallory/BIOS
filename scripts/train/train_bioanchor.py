@@ -338,11 +338,14 @@ if __name__ == "__main__":
 
             loss_epoch += loss.item()
 
+        # 2026-09-02: periodic checkpoint saving removed (was every 10 epochs).
+        # Reason: 101 checkpoints x 790MB = ~78GB per run; RCC storage limits.
+        # Final checkpoint is still saved after the loop (line ~390).
+        # if epoch % 10 == 0:
+        #     save_model(args, model, optimizer, epoch)
+
         loss_epoch_list.append(loss_epoch)
         print(f"Epoch [{epoch}/{args.epochs}] Total Loss: {loss_epoch:.4f}")
-
-        if epoch % 10 == 0:
-            save_model(args, model, optimizer, epoch)
 
         # evaluate and track best checkpoint
         model.eval()
@@ -361,22 +364,32 @@ if __name__ == "__main__":
             labels = gt.iloc[:, 1].values
             if len(preds) == len(labels):
                 v = v_measure_score(labels, preds)
+                # 2026-09-02: best-checkpoint saving disabled.
+                # Reason: professor's instruction to use the final epoch's
+                # result (fixed 600 epochs, per Subtype-DCC Table S1) and to
+                # avoid storing intermediate weights (RCC storage limits).
+                # Also removes selection bias: picking the best-V checkpoint
+                # inflated V by ~0.02-0.03 in our epoch sweeps.
+                # if v > best_v:
+                #     best_v = v
+                #     best_epoch = epoch
+                #     torch.save({
+                #         'net':       model.state_dict(),
+                #         'optimizer': optimizer.state_dict(),
+                #         'epoch':     epoch,
+                #         'head_type': args.head_type,
+                #         'bio_dim':   args.bio_dim,
+                #         'n_clusters': args.cluster_number,
+                #         'n_anchors':  args.n_anchors,
+                #         'v_measure': v,
+                #     }, os.path.join(args.model_path, 'best_checkpoint.tar'))
+                #     print(f"  *** New best V={v:.4f} at epoch {epoch} — saved best_checkpoint.tar")
+                # else:
+                #     print(f"  V={v:.4f} (best={best_v:.4f} @ ep {best_epoch})")
                 if v > best_v:
                     best_v = v
                     best_epoch = epoch
-                    torch.save({
-                        'net':       model.state_dict(),
-                        'optimizer': optimizer.state_dict(),
-                        'epoch':     epoch,
-                        'head_type': args.head_type,
-                        'bio_dim':   args.bio_dim,
-                        'n_clusters': args.cluster_number,
-                        'n_anchors':  args.n_anchors,
-                        'v_measure': v,
-                    }, os.path.join(args.model_path, 'best_checkpoint.tar'))
-                    print(f"  *** New best V={v:.4f} at epoch {epoch} — saved best_checkpoint.tar")
-                else:
-                    print(f"  V={v:.4f} (best={best_v:.4f} @ ep {best_epoch})")
+                print(f"  V={v:.4f} (best so far={best_v:.4f} @ ep {best_epoch})")
         model.train()
 
     # print loss at key epochs — adapts to any epoch count automatically

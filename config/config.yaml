@@ -4,8 +4,7 @@ workers: 8
 
 # train options
 start_epoch: 0
-# epochs: 600
-epochs: 10
+epochs: 600
 
 # model options
 feature_dim: 256 #128
