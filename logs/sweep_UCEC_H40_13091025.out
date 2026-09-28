@@ -1,0 +1,308 @@
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep    0  V=0.0393  ARI=0.0025
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   10  V=0.2723  ARI=0.2459
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   20  V=0.2775  ARI=0.2798
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   30  V=0.2751  ARI=0.2487
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   40  V=0.2748  ARI=0.2502
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   50  V=0.2859  ARI=0.2338
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   60  V=0.2841  ARI=0.2492
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   70  V=0.2908  ARI=0.2640
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   80  V=0.2805  ARI=0.2649
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   90  V=0.2873  ARI=0.2522
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  100  V=0.2975  ARI=0.2579
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  110  V=0.2842  ARI=0.2248
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  120  V=0.2878  ARI=0.2292
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  130  V=0.2944  ARI=0.2638
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  140  V=0.2945  ARI=0.2600
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  150  V=0.2953  ARI=0.2688
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  160  V=0.2845  ARI=0.2141
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  170  V=0.3084  ARI=0.2866
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  180  V=0.3179  ARI=0.2943
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  190  V=0.3177  ARI=0.3014
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  200  V=0.3199  ARI=0.3040
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  210  V=0.3217  ARI=0.2918
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  220  V=0.3190  ARI=0.3310
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  230  V=0.3199  ARI=0.3014
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  240  V=0.3091  ARI=0.2746
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  250  V=0.3366  ARI=0.3239
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  260  V=0.3362  ARI=0.3228
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  270  V=0.3443  ARI=0.3315
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  280  V=0.3343  ARI=0.3272
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  290  V=0.3223  ARI=0.3025
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  300  V=0.3288  ARI=0.3146
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  310  V=0.3388  ARI=0.3262
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  320  V=0.3302  ARI=0.3231
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  330  V=0.3407  ARI=0.3315
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  340  V=0.3130  ARI=0.2947
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  350  V=0.3162  ARI=0.2899
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  360  V=0.3310  ARI=0.3286
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  370  V=0.3344  ARI=0.3280
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  380  V=0.3112  ARI=0.2975
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  390  V=0.3197  ARI=0.2883
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  400  V=0.3232  ARI=0.3017
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  410  V=0.3288  ARI=0.3059
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  420  V=0.3216  ARI=0.3011
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  430  V=0.3331  ARI=0.3337
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  440  V=0.3413  ARI=0.3389
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  450  V=0.3045  ARI=0.3007
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  460  V=0.3231  ARI=0.2935
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  470  V=0.3284  ARI=0.3169
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  480  V=0.3180  ARI=0.2859
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  490  V=0.3087  ARI=0.2959
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  500  V=0.2999  ARI=0.2857
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  510  V=0.2856  ARI=0.2668
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  520  V=0.3428  ARI=0.3255
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  530  V=0.3189  ARI=0.2897
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  540  V=0.3304  ARI=0.3021
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  550  V=0.2919  ARI=0.2748
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  560  V=0.2985  ARI=0.2803
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  570  V=0.2978  ARI=0.2765
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  580  V=0.3041  ARI=0.2918
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  590  V=0.2940  ARI=0.2784
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  600  V=0.2919  ARI=0.2771
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  610  V=0.3029  ARI=0.2828
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  620  V=0.3120  ARI=0.2863
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  630  V=0.3199  ARI=0.3005
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  640  V=0.3011  ARI=0.2780
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  650  V=0.3065  ARI=0.2825
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  660  V=0.3129  ARI=0.2922
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  670  V=0.3031  ARI=0.2779
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  680  V=0.3043  ARI=0.2816
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  690  V=0.2932  ARI=0.2792
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  700  V=0.3198  ARI=0.3027
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  710  V=0.3098  ARI=0.2799
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  720  V=0.3076  ARI=0.2949
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  730  V=0.3045  ARI=0.2909
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  740  V=0.3009  ARI=0.2890
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  750  V=0.3109  ARI=0.3024
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  760  V=0.3083  ARI=0.2958
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  770  V=0.3143  ARI=0.2985
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  780  V=0.3061  ARI=0.2928
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  790  V=0.3016  ARI=0.2887
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  800  V=0.3133  ARI=0.3018
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  810  V=0.2868  ARI=0.2629
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  820  V=0.3082  ARI=0.2947
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  830  V=0.3019  ARI=0.2834
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  840  V=0.3151  ARI=0.2970
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  850  V=0.3045  ARI=0.2877
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  860  V=0.3168  ARI=0.3016
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  870  V=0.3160  ARI=0.3053
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  880  V=0.3134  ARI=0.2991
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  890  V=0.3246  ARI=0.3135
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  900  V=0.3148  ARI=0.2983
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  910  V=0.2943  ARI=0.2735
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  920  V=0.3172  ARI=0.3034
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  930  V=0.3118  ARI=0.2964
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  940  V=0.3170  ARI=0.3013
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  950  V=0.3142  ARI=0.3017
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  960  V=0.3160  ARI=0.2992
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  970  V=0.3165  ARI=0.2997
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  980  V=0.3089  ARI=0.2902
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  990  V=0.3163  ARI=0.3001
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep 1000  V=0.3265  ARI=0.3153
+
+best V=0.3443 at epoch 270
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep    0  -log10p= 1.989  (p=1.03e-02, n=509, clusters=3)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   20  -log10p= 6.058  (p=8.75e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   40  -log10p= 4.967  (p=1.08e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   60  -log10p= 7.037  (p=9.18e-08, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep   80  -log10p= 5.860  (p=1.38e-06, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  100  -log10p= 7.720  (p=1.91e-08, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  120  -log10p= 8.843  (p=1.43e-09, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  140  -log10p= 7.724  (p=1.89e-08, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  160  -log10p= 6.132  (p=7.39e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  180  -log10p= 6.774  (p=1.68e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  200  -log10p= 6.735  (p=1.84e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  220  -log10p= 6.061  (p=8.69e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  240  -log10p= 6.246  (p=5.68e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  260  -log10p= 6.343  (p=4.54e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  280  -log10p= 6.042  (p=9.08e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  300  -log10p= 5.800  (p=1.58e-06, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  320  -log10p= 5.908  (p=1.24e-06, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  340  -log10p= 6.097  (p=8.00e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  360  -log10p= 6.224  (p=5.97e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  380  -log10p= 6.337  (p=4.60e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  400  -log10p= 5.087  (p=8.19e-06, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  420  -log10p= 5.267  (p=5.40e-06, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  440  -log10p= 5.575  (p=2.66e-06, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  460  -log10p= 5.416  (p=3.84e-06, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  480  -log10p= 4.858  (p=1.39e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  500  -log10p= 4.598  (p=2.52e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  520  -log10p= 6.273  (p=5.33e-07, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  540  -log10p= 5.115  (p=7.68e-06, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  560  -log10p= 4.050  (p=8.91e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  580  -log10p= 3.962  (p=1.09e-04, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  600  -log10p= 3.798  (p=1.59e-04, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  620  -log10p= 4.805  (p=1.57e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  640  -log10p= 3.544  (p=2.86e-04, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  660  -log10p= 4.213  (p=6.13e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  680  -log10p= 3.901  (p=1.25e-04, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  700  -log10p= 4.327  (p=4.71e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  720  -log10p= 4.239  (p=5.77e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  740  -log10p= 4.345  (p=4.52e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  760  -log10p= 4.135  (p=7.33e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  780  -log10p= 4.235  (p=5.82e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  800  -log10p= 4.227  (p=5.93e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  820  -log10p= 3.968  (p=1.08e-04, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  840  -log10p= 4.422  (p=3.79e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  860  -log10p= 3.865  (p=1.36e-04, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  880  -log10p= 4.503  (p=3.14e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  900  -log10p= 3.818  (p=1.52e-04, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  920  -log10p= 4.197  (p=6.36e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  940  -log10p= 4.975  (p=1.06e-05, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  960  -log10p= 3.895  (p=1.27e-04, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep  980  -log10p= 3.875  (p=1.33e-04, n=509, clusters=4)
+[dataloader] Loaded bio-anchors from data/bio_anchors/bio_anchors_UCEC_gsva_H40.csv: torch.Size([510, 40])
+ep 1000  -log10p= 4.293  (p=5.09e-05, n=509, clusters=4)
+
+best -log10p=8.843 at epoch 120

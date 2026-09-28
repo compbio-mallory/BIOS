@@ -1,0 +1,13 @@
+# head_mlp_biodim4_pathways40
+# BRCA ablation, created 2026-09-03
+cancer_type:      BRCA
+cluster_number:   5
+head_type:        mlp
+bio_dim:          4
+n_anchors:        40
+bio_anchor_file:  data/bio_anchors/bio_anchors_BRCA_gsva_H40.csv
+epochs:           600
+lambda_bio:       0.1
+batch_size:       64
+seed:             42
+model_path:       save/head_mlp_biodim4_pathways40

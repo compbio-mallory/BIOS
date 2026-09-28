@@ -19,7 +19,7 @@ EPOCHS=${EPOCHS:-200}
 ANCHOR_MODE=${ANCHOR_MODE:-gsva_H40}
 NANCH=${NANCH:-40}
 ANCHORS=data/bio_anchors/bio_anchors_${CANCER}_${ANCHOR_MODE}.csv
-MODELDIR=save/model_${CANCER}_${HEAD}_${ANCHOR_MODE}_b${BIODIM}
+MODELDIR=save/${SLURM_JOB_NAME}
 mkdir -p logs $MODELDIR results
 
 echo "=== gate: anchors cover omics ==="

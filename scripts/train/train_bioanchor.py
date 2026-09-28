@@ -143,10 +143,9 @@ if __name__ == "__main__":
     # ── argument parsing ────────────────────────────────────────
     parser = argparse.ArgumentParser()
 
-    # load defaults from config.yaml (learning_rate, weight_decay, etc.)
-    config = yaml_config_hook("./config/config.yaml")
-    for k, v in config.items():
-        parser.add_argument(f"--{k}", default=v, type=type(v))
+    parser.add_argument("--config", type=str, default=None,
+                        help="path to a run config yaml; values override defaults")
+    args_cli, _ = parser.parse_known_args()
 
     # experiment args
     parser.add_argument("--cancer_type",     "-c", type=str,   required=True)
@@ -169,10 +168,25 @@ if __name__ == "__main__":
     parser.add_argument("--lambda_bio",            type=float, default=0.1,
                         help="Weight for bio-anchor loss. 0.1 validated optimal.")
     parser.add_argument("--batch_size",            type=int,   default=32)
-
-    # only relevant for MLP head — ignored by linear and attention
     parser.add_argument("--bio_hidden_dim",        type=int,   default=64,
                         help="Hidden dim for MLP head only.")
+
+    # ---- config loading -------------------------------------------------
+    # Defaults come from config_template.yaml; a run config passed with
+    # --config overrides them. All training parameters live in the config
+    # file, not on the command line.
+    from paths import config_template
+    config = yaml_config_hook(config_template())
+    if args_cli.config:
+        import yaml
+        with open(args_cli.config) as fh:
+            run_cfg = yaml.safe_load(fh)
+        config.update(run_cfg)
+        print(f"[config] loaded {args_cli.config}")
+        for k, v in run_cfg.items():
+            print(f"[config]   {k}: {v}")
+
+    parser.set_defaults(**config)
 
     args = parser.parse_args()
     if args.n_anchors is None:
