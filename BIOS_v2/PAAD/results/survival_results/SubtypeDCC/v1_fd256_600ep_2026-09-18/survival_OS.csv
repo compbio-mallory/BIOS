@@ -1,0 +1,4 @@
+# source: PAAD/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+# generated: 2026-09-21 11:11 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+PAAD,SubtypeDCC,v1_fd256_600ep_2026-09-18,OS,176,92,2,11.7807,0.0005984637245396934,3.223,0.6015

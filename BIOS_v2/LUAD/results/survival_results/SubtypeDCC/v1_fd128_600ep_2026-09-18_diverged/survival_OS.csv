@@ -1,0 +1,4 @@
+# source: LUAD/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+# generated: 2026-09-21 11:10 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+LUAD,SubtypeDCC,v1_fd128_600ep_2026-09-18,OS,481,173,1,0.0,,,0.5

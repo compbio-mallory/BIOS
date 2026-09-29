@@ -1,0 +1,4 @@
+# source: UCEC/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# generated: 2026-09-12 13:52 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+UCEC,BIOS,v2_benchmark_600ep_2026-09-10,OS,509,83,4,30.6768,9.942199997296557e-07,6.0025,0.6647

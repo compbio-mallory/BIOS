@@ -1,0 +1,12 @@
+# BIOS v2_benchmark_600ep_2026-09-10 — LUAD
+cancer_type:      LUAD
+cluster_number:   3
+head_type:        linear
+bio_dim:          16
+n_anchors:        40
+bio_anchor_file:  /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/LUAD/anchors/bio_anchors_LUAD_gsva_H40.csv
+epochs:           600
+lambda_bio:       0.1
+batch_size:       64
+seed:             42
+model_path:       /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/LUAD/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/checkpoint

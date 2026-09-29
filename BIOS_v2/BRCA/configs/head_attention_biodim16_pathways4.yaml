@@ -1,0 +1,15 @@
+# head_attention_biodim16_pathways4
+# BRCA ablation, created 2026-09-03
+cancer_type:      BRCA
+cluster_number:   5
+head_type:        attention_query_v3
+bio_dim:          16
+n_anchors:        4
+bio_anchor_file:  /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/anchors/bio_anchors_BRCA_gsva_decorr_M4.csv
+epochs:           600
+lambda_bio:       0.1
+batch_size:       64
+seed:             42
+model_path:       /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/results/v2_ablation_600ep_2026-09-08/checkpoints/head_attention_biodim16_pathways4
+lambda_entropy:   0.02
+lambda_div:       0.05

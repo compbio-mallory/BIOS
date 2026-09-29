@@ -1,0 +1,13 @@
+# source: UCEC/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+# clinical: UCEC/raw/UCEC_clinicalMatrix.txt
+# tested: 1 of 6 parameters
+# significant after Bonferroni: analytic 1, permutation 1
+# permutation: port of benchmark.R get.empirical.clinical (batches of 1000, stop when CI excludes 0.05 or >1e5, seed 42)
+# generated: 2026-09-22 01:39 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant,p_perm,p_perm_bonferroni,significant_perm,n_perms
+UCEC,SubtypeDCC,v1_fd128_600ep_2026-09-18,gender,DISCRETE,skipped_constant,,,,False,,,False,
+UCEC,SubtypeDCC,v1_fd128_600ep_2026-09-18,age_at_initial_pathologic_diagnosis,NUMERIC,tested,56.16744630807446,3.8691172844493e-12,3.8691172844493e-12,True,0.0,0.0,True,1000.0
+UCEC,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_M,DISCRETE,absent,,,,False,,,False,
+UCEC,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_N,DISCRETE,absent,,,,False,,,False,
+UCEC,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_T,DISCRETE,absent,,,,False,,,False,
+UCEC,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_stage,DISCRETE,absent,,,,False,,,False,

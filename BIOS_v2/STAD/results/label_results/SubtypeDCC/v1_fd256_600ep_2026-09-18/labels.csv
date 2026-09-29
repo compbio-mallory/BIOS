@@ -1,0 +1,13 @@
+# source: STAD/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+# clinical: STAD/raw/STAD_clinicalMatrix.txt
+# tested: 6 of 6 parameters
+# significant after Bonferroni: analytic 1, permutation 0
+# permutation: port of benchmark.R get.empirical.clinical (batches of 1000, stop when CI excludes 0.05 or >1e5, seed 42)
+# generated: 2026-09-22 01:40 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant,p_perm,p_perm_bonferroni,significant_perm,n_perms
+STAD,SubtypeDCC,v1_fd256_600ep_2026-09-18,gender,DISCRETE,tested,2.6349836556824036,0.26780616426024234,1.0,False,0.262,1.0,False,1000
+STAD,SubtypeDCC,v1_fd256_600ep_2026-09-18,age_at_initial_pathologic_diagnosis,NUMERIC,tested,10.469640936461232,0.00532778090389649,0.03196668542337894,True,0.013,0.078,False,1000
+STAD,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_M,DISCRETE,tested,5.667814894213409,0.22536748491687467,1.0,False,0.239,1.0,False,1000
+STAD,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_N,DISCRETE,tested,18.647663900015385,0.17885374756538996,1.0,False,0.168,1.0,False,1000
+STAD,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_T,DISCRETE,tested,27.12827035665503,0.13169362592200032,0.790161755532002,False,0.128,0.768,False,1000
+STAD,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_stage,DISCRETE,tested,22.724228813212903,0.41743880203132727,1.0,False,0.422,1.0,False,1000

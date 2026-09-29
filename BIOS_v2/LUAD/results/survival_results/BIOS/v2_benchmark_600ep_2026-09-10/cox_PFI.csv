@@ -1,0 +1,5 @@
+# source: LUAD/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# generated: 2026-09-12 13:52 by survival_analysis.py
+covariate,coef,HR,p
+cluster_1,0.39770948520291627,1.488411561508316,0.022219293205150578
+cluster_2,0.09191735605665609,1.096274217912571,0.623130075929501

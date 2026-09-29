@@ -1,0 +1,15 @@
+=== DCC PAAD fd=128 | Fri Sep 18 04:37:58 PM EDT 2026 ===
+2
+Epoch [0/600]	 Loss: 31.728184700012207
+Epoch [100/600]	 Loss: 26.395000457763672
+Epoch [200/600]	 Loss: 25.71895980834961
+Epoch [300/600]	 Loss: 24.6722469329834
+Epoch [400/600]	 Loss: 24.115032196044922
+Epoch [500/600]	 Loss: 23.840432167053223
+Epoch [600/600]	 Loss: 23.777843475341797
+range(0, 601)
+### Creating features from model ###
+Features shape (176, 256)
+=== convert clusters ===
+PAAD: 176 patients, 2 clusters {0: 87, 1: 89} -> /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/PAAD/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+=== DONE Fri Sep 18 05:14:06 PM EDT 2026 ===

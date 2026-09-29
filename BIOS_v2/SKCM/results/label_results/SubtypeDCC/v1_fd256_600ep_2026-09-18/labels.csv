@@ -1,0 +1,13 @@
+# source: SKCM/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+# clinical: SKCM/raw/SKCM_clinicalMatrix.txt
+# tested: 6 of 6 parameters
+# significant after Bonferroni: analytic 2, permutation 2
+# permutation: port of benchmark.R get.empirical.clinical (batches of 1000, stop when CI excludes 0.05 or >1e5, seed 42)
+# generated: 2026-09-22 01:40 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant,p_perm,p_perm_bonferroni,significant_perm,n_perms
+SKCM,SubtypeDCC,v1_fd256_600ep_2026-09-18,gender,DISCRETE,tested,0.5073256429908183,0.9172790773573143,1.0,False,0.924,1.0,False,1000
+SKCM,SubtypeDCC,v1_fd256_600ep_2026-09-18,age_at_initial_pathologic_diagnosis,NUMERIC,tested,7.207030313600833,0.06558373152152241,0.3935023891291345,False,0.068,0.40800000000000003,False,1000
+SKCM,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_M,DISCRETE,tested,9.832433689713865,0.6306583964258157,1.0,False,0.66,1.0,False,1000
+SKCM,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_N,DISCRETE,tested,45.788976101041484,0.01340443452442228,0.08042660714653369,False,0.01,0.06,False,1000
+SKCM,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_T,DISCRETE,tested,81.72215473820943,0.00023414655463219322,0.0014048793277931593,True,0.001,0.006,True,1000
+SKCM,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_stage,DISCRETE,tested,72.2896976644922,0.0009416428752116669,0.005649857251270002,True,0.0,0.0,True,1000

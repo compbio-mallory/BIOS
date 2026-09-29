@@ -1,0 +1,12 @@
+# BIOS v2_biodim0_seed21_600ep_2026-09-28 — BRCA
+cancer_type:      BRCA
+cluster_number:   5
+head_type:        linear
+bio_dim:          0
+n_anchors:        40
+bio_anchor_file:  /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/anchors/bio_anchors_BRCA_gsva_H40.csv
+epochs:           600
+lambda_bio:       0.1
+batch_size:       64
+seed:             21
+model_path:       /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/results/subtyping_results/BIOS/v2_biodim0_seed21_600ep_2026-09-28/checkpoint

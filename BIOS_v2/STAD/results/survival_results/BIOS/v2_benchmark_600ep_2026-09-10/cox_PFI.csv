@@ -1,0 +1,5 @@
+# source: STAD/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# generated: 2026-09-12 13:52 by survival_analysis.py
+covariate,coef,HR,p
+cluster_1,-0.05255663295892913,0.9488005861496049,0.7948380959730703
+cluster_2,-0.36333697376115,0.6953520786103358,0.10263374134211901

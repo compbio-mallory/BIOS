@@ -1,0 +1,13 @@
+# source: BRCA/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+# clinical: BRCA/raw/BRCA_clinicalMatrix.txt
+# tested: 6 of 6 parameters
+# significant after Bonferroni: analytic 5, permutation 5
+# permutation: port of benchmark.R get.empirical.clinical (batches of 1000, stop when CI excludes 0.05 or >1e5, seed 42)
+# generated: 2026-09-22 01:39 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant,p_perm,p_perm_bonferroni,significant_perm,n_perms
+BRCA,SubtypeDCC,v1_fd128_600ep_2026-09-18,gender,DISCRETE,tested,22.026022575907717,0.00019804407489332893,0.0011882644493599736,True,0.001,0.006,True,1000
+BRCA,SubtypeDCC,v1_fd128_600ep_2026-09-18,age_at_initial_pathologic_diagnosis,NUMERIC,tested,41.20984049802085,2.4319212261063193e-08,1.4591527356637915e-07,True,0.0,0.0,True,1000
+BRCA,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_M,DISCRETE,tested,12.824219667694013,0.3819456367841902,1.0,False,0.398,1.0,False,1000
+BRCA,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_N,DISCRETE,tested,116.24388493586115,1.8381510038682793e-05,0.00011028906023209675,True,0.0,0.0,True,1000
+BRCA,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_T,DISCRETE,tested,86.70606620299277,0.0005240686944273396,0.0031444121665640374,True,0.0,0.0,True,1000
+BRCA,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_stage,DISCRETE,tested,99.29489046525265,1.947362736528232e-05,0.00011684176419169394,True,0.0,0.0,True,1000

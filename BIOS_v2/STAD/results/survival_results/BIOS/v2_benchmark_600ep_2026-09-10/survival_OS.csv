@@ -1,0 +1,4 @@
+# source: STAD/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# generated: 2026-09-12 13:52 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+STAD,BIOS,v2_benchmark_600ep_2026-09-10,OS,402,154,3,3.3926,0.1833583520238058,0.7367,0.5436

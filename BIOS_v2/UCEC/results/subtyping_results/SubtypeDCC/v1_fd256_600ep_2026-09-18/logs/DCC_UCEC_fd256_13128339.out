@@ -1,0 +1,15 @@
+=== DCC UCEC fd=256 | Fri Sep 18 04:37:59 PM EDT 2026 ===
+4
+Epoch [0/600]	 Loss: 92.88340759277344
+Epoch [100/600]	 Loss: 80.28804016113281
+Epoch [200/600]	 Loss: 74.88470935821533
+Epoch [300/600]	 Loss: 73.70584392547607
+Epoch [400/600]	 Loss: 72.1712818145752
+Epoch [500/600]	 Loss: 71.26804542541504
+Epoch [600/600]	 Loss: 70.3207483291626
+range(0, 601)
+### Creating features from model ###
+Features shape (510, 256)
+=== convert clusters ===
+UCEC: 510 patients, 4 clusters {0: 100, 1: 145, 2: 128, 3: 137} -> /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/UCEC/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+=== DONE Fri Sep 18 06:28:04 PM EDT 2026 ===

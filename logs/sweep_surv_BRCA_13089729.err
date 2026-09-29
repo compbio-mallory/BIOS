@@ -1,4 +1,0 @@
-usage: sweep_survival.py [-h] --model_dir MODEL_DIR [--cancer CANCER] [--k K]
-                         --anchors ANCHORS --clinical CLINICAL
-                         [--endpoint {OS,PFI}] [--every EVERY]
-sweep_survival.py: error: the following arguments are required: --clinical

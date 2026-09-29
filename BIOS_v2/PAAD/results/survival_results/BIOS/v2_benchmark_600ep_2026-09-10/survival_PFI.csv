@@ -1,0 +1,4 @@
+# source: PAAD/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# generated: 2026-09-12 13:52 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+PAAD,BIOS,v2_benchmark_600ep_2026-09-10,PFI,176,102,2,0.0694,0.7922335739281818,0.1011,0.4724

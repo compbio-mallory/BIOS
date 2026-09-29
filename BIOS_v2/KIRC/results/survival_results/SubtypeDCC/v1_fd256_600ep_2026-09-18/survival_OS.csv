@@ -1,0 +1,4 @@
+# source: KIRC/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+# generated: 2026-09-21 11:11 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+KIRC,SubtypeDCC,v1_fd256_600ep_2026-09-18,OS,488,163,4,36.4639,5.974482037239828e-08,7.2237,0.6237

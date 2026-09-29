@@ -1,0 +1,6 @@
+=== analytic OS: Fri Sep 11 12:25:37 EDT 2026 ===
+cancer method                       version endpoint  n  events  clusters  logrank_chi2  logrank_p  neglog10_p  c_index
+   UVM   BIOS v2_benchmark_600ep_2026-09-10       OS 80      23         4       24.4887    0.00002      4.7045   0.7934
+
+saved: /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/UVM/results/survival_results/BIOS/v2_benchmark_600ep_2026-09-10/survival_OS.csv
+=== permutation OS: Fri Sep 11 12:25:56 EDT 2026 ===

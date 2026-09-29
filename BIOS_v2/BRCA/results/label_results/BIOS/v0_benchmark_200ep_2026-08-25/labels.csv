@@ -1,0 +1,11 @@
+# source: BRCA/results/subtyping_results/BIOS/v0_benchmark_200ep_2026-08-25/BRCA_linear_H40_clusters.csv
+# clinical: BRCA/raw/BRCA_clinicalMatrix.txt
+# tested: 6 of 6 parameters; significant after Bonferroni: 5
+# generated: 2026-09-10 15:58 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant
+BRCA,BIOS,v0_benchmark_200ep_2026-08-25,gender,DISCRETE,tested,20.324087944059308,0.0004309472434973565,0.002585683460984139,True
+BRCA,BIOS,v0_benchmark_200ep_2026-08-25,age_at_initial_pathologic_diagnosis,NUMERIC,tested,43.903760259387944,6.717966894287334e-09,4.0307801365724003e-08,True
+BRCA,BIOS,v0_benchmark_200ep_2026-08-25,pathologic_M,DISCRETE,tested,9.987421132800689,0.6170642437480538,1.0,False
+BRCA,BIOS,v0_benchmark_200ep_2026-08-25,pathologic_N,DISCRETE,tested,120.73034892221256,5.662096121721534e-06,3.3972576730329203e-05,True
+BRCA,BIOS,v0_benchmark_200ep_2026-08-25,pathologic_T,DISCRETE,tested,88.2645288387281,0.00035613689534681433,0.0021368213720808858,True
+BRCA,BIOS,v0_benchmark_200ep_2026-08-25,pathologic_stage,DISCRETE,tested,97.50955323380855,3.177040171061792e-05,0.0001906224102637075,True

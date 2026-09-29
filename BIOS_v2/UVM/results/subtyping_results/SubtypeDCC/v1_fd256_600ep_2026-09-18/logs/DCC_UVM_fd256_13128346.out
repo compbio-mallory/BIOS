@@ -1,0 +1,15 @@
+=== DCC UVM fd=256 | Fri Sep 18 04:37:59 PM EDT 2026 ===
+4
+Epoch [0/600]	 Loss: 20.358086585998535
+Epoch [100/600]	 Loss: 15.880791664123535
+Epoch [200/600]	 Loss: 15.49068021774292
+Epoch [300/600]	 Loss: 14.716132164001465
+Epoch [400/600]	 Loss: 14.185041427612305
+Epoch [500/600]	 Loss: 13.895638942718506
+Epoch [600/600]	 Loss: 13.453645706176758
+range(0, 601)
+### Creating features from model ###
+Features shape (80, 256)
+=== convert clusters ===
+UVM: 80 patients, 4 clusters {0: 18, 1: 20, 2: 21, 3: 21} -> /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/UVM/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+=== DONE Fri Sep 18 05:16:12 PM EDT 2026 ===

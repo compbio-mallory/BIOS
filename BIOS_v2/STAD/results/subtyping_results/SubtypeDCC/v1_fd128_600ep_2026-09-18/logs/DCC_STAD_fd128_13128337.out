@@ -1,0 +1,15 @@
+=== DCC STAD fd=128 | Fri Sep 18 04:37:58 PM EDT 2026 ===
+3
+Epoch [0/600]	 Loss: 76.87258052825928
+Epoch [100/600]	 Loss: 59.62940788269043
+Epoch [200/600]	 Loss: 57.67769241333008
+Epoch [300/600]	 Loss: 56.781734466552734
+Epoch [400/600]	 Loss: 56.807929039001465
+Epoch [500/600]	 Loss: 55.7028431892395
+Epoch [600/600]	 Loss: 55.74745750427246
+range(0, 601)
+### Creating features from model ###
+Features shape (407, 256)
+=== convert clusters ===
+STAD: 407 patients, 3 clusters {0: 154, 1: 121, 2: 132} -> /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/STAD/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+=== DONE Fri Sep 18 06:12:23 PM EDT 2026 ===

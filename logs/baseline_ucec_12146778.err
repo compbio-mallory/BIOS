@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "scripts/train/train_baseline_OLD.py", line 82, in <module>
-    model = network.Network(ae, args.feature_dim, cluster_number)
-NameError: name 'network' is not defined

@@ -1,0 +1,13 @@
+# source: SKCM/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# clinical: SKCM/raw/SKCM_clinicalMatrix.txt
+# tested: 6 of 6 parameters
+# significant after Bonferroni: analytic 4, permutation 4
+# permutation: port of benchmark.R get.empirical.clinical (batches of 1000, stop when CI excludes 0.05 or >1e5, seed 42)
+# generated: 2026-09-22 01:39 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant,p_perm,p_perm_bonferroni,significant_perm,n_perms
+SKCM,BIOS,v2_benchmark_600ep_2026-09-10,gender,DISCRETE,tested,0.31822166446772965,0.9565658293320122,1.0,False,0.974,1.0,False,1000
+SKCM,BIOS,v2_benchmark_600ep_2026-09-10,age_at_initial_pathologic_diagnosis,NUMERIC,tested,26.41759297302608,7.79781960202295e-06,4.6786917612137705e-05,True,0.0,0.0,True,1000
+SKCM,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_M,DISCRETE,tested,10.951020206776036,0.533120878060642,1.0,False,0.545,1.0,False,1000
+SKCM,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_N,DISCRETE,tested,49.91804468955871,0.004650985821129985,0.02790591492677991,True,0.003,0.018000000000000002,True,1000
+SKCM,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_T,DISCRETE,tested,106.85593409369558,1.4533060165757664e-07,8.719836099454599e-07,True,0.0,0.0,True,1000
+SKCM,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_stage,DISCRETE,tested,92.00554337090517,3.579702786495891e-06,2.1478216718975346e-05,True,0.0,0.0,True,1000

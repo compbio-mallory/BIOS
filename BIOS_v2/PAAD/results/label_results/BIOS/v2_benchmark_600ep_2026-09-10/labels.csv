@@ -1,0 +1,13 @@
+# source: PAAD/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# clinical: PAAD/raw/PAAD_clinicalMatrix.txt
+# tested: 6 of 6 parameters
+# significant after Bonferroni: analytic 0, permutation 0
+# permutation: port of benchmark.R get.empirical.clinical (batches of 1000, stop when CI excludes 0.05 or >1e5, seed 42)
+# generated: 2026-09-22 01:39 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant,p_perm,p_perm_bonferroni,significant_perm,n_perms
+PAAD,BIOS,v2_benchmark_600ep_2026-09-10,gender,DISCRETE,tested,5.08519726825873,0.024130931344953425,0.14478558806972056,False,0.019,0.11399999999999999,False,1000
+PAAD,BIOS,v2_benchmark_600ep_2026-09-10,age_at_initial_pathologic_diagnosis,NUMERIC,tested,0.002267608309893247,0.9620195617874797,1.0,False,0.966,1.0,False,1000
+PAAD,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_M,DISCRETE,tested,2.8579649318674814,0.23955255115383448,1.0,False,0.266,1.0,False,1000
+PAAD,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_N,DISCRETE,tested,5.237903623256585,0.15518286199757697,0.9310971719854618,False,0.165,0.99,False,1000
+PAAD,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_T,DISCRETE,tested,2.6500491616462094,0.7537469480546585,1.0,False,0.91,1.0,False,1000
+PAAD,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_stage,DISCRETE,tested,7.923337309736993,0.33940250876126965,1.0,False,0.31,1.0,False,1000

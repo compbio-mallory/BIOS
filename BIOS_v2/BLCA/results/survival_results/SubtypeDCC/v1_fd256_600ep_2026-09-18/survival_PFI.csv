@@ -1,0 +1,4 @@
+# source: BLCA/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+# generated: 2026-09-21 11:11 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+BLCA,SubtypeDCC,v1_fd256_600ep_2026-09-18,PFI,398,168,5,8.9661,0.061951698431357574,1.2079,0.5801

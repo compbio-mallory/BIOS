@@ -1,0 +1,15 @@
+=== DCC BRCA fd=256 | Fri Sep 18 04:37:59 PM EDT 2026 ===
+5
+Epoch [0/600]	 Loss: 197.0196771621704
+Epoch [100/600]	 Loss: 164.63645219802856
+Epoch [200/600]	 Loss: 159.84828424453735
+Epoch [300/600]	 Loss: 156.03353595733643
+Epoch [400/600]	 Loss: 154.21204805374146
+Epoch [500/600]	 Loss: 153.06322288513184
+Epoch [600/600]	 Loss: 152.4486312866211
+range(0, 601)
+### Creating features from model ###
+Features shape (1031, 256)
+=== convert clusters ===
+BRCA: 1031 patients, 5 clusters {0: 180, 1: 205, 2: 200, 3: 218, 4: 228} -> /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+=== DONE Fri Sep 18 08:37:54 PM EDT 2026 ===

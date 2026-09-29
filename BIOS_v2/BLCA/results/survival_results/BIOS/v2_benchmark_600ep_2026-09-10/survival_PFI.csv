@@ -1,0 +1,4 @@
+# source: BLCA/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# generated: 2026-09-12 13:52 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+BLCA,BIOS,v2_benchmark_600ep_2026-09-10,PFI,398,168,5,10.5059,0.03271586385186441,1.4852,0.5794

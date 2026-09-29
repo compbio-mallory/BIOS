@@ -1,0 +1,2 @@
+n=490  events=177  clusters=1  cores=16
+analytic:    chi2=0.0000  p=nan  -log10p=nan

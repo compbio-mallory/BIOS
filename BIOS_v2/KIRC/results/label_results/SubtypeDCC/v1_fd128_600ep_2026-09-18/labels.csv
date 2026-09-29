@@ -1,0 +1,13 @@
+# source: KIRC/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+# clinical: KIRC/raw/KIRC_clinicalMatrix.txt
+# tested: 6 of 6 parameters
+# significant after Bonferroni: analytic 5, permutation 5
+# permutation: port of benchmark.R get.empirical.clinical (batches of 1000, stop when CI excludes 0.05 or >1e5, seed 42)
+# generated: 2026-09-22 01:39 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant,p_perm,p_perm_bonferroni,significant_perm,n_perms
+KIRC,SubtypeDCC,v1_fd128_600ep_2026-09-18,gender,DISCRETE,tested,11.246370236572403,0.01046559598691769,0.06279357592150614,False,0.017,0.10200000000000001,False,1000
+KIRC,SubtypeDCC,v1_fd128_600ep_2026-09-18,age_at_initial_pathologic_diagnosis,NUMERIC,tested,36.64125393698643,5.479988006977652e-08,3.287992804186591e-07,True,0.0,0.0,True,1000
+KIRC,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_M,DISCRETE,tested,43.08015733509612,1.1245985820709346e-07,6.747591492425607e-07,True,0.0,0.0,True,1000
+KIRC,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_N,DISCRETE,tested,20.57918032911142,0.0021827714661311346,0.013096628796786807,True,0.0,0.0,True,1000
+KIRC,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_T,DISCRETE,tested,81.81513049566745,1.0797043117040911e-06,6.478225870224547e-06,True,0.0,0.0,True,1000
+KIRC,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_stage,DISCRETE,tested,69.77201589263318,3.5334711804371415e-10,2.120082708262285e-09,True,0.0,0.0,True,1000

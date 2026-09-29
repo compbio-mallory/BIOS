@@ -1,0 +1,5 @@
+start Mon Sep 21 11:12:27 AM EDT 2026
+end Mon Sep 21 11:16:44 AM EDT 2026
+  perms=68032  extreme=641  p=9.422e-03  CI=[8.710e-03,1.018e-02]
+permutation: p=9.4220e-03  -log10p=2.0259  (68032 permutations)
+difference in -log10p: -0.0008

@@ -1,0 +1,9 @@
+n=510  events=114  clusters=4  cores=16
+analytic:    chi2=33.3895  p=2.6655e-07  -log10p=6.5742
+  perms=1000000  extreme=1  p=1.000e-06  CI=[2.532e-08,5.572e-06]
+  perms=2000000  extreme=1  p=5.000e-07  CI=[1.266e-08,2.786e-06]
+  perms=4000000  extreme=2  p=5.000e-07  CI=[6.055e-08,1.806e-06]
+  perms=8000000  extreme=5  p=6.250e-07  CI=[2.029e-07,1.459e-06]
+  perms=10000000  extreme=5  p=5.000e-07  CI=[1.623e-07,1.167e-06]
+permutation: p=5.0000e-07  -log10p=6.3010  (10000000 permutations)
+difference in -log10p: -0.2732

@@ -1,0 +1,5 @@
+# source: STAD/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+# generated: 2026-09-21 11:12 by survival_analysis.py
+covariate,coef,HR,p
+cluster_1,0.5220993672072675,1.6855625526197238,0.01660852060454482
+cluster_2,0.36903308598215967,1.446335456312214,0.09499364031567469

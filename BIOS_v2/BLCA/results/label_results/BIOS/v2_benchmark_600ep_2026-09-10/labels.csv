@@ -1,0 +1,13 @@
+# source: BLCA/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# clinical: BLCA/raw/BLCA_clinicalMatrix.txt
+# tested: 6 of 6 parameters
+# significant after Bonferroni: analytic 5, permutation 5
+# permutation: port of benchmark.R get.empirical.clinical (batches of 1000, stop when CI excludes 0.05 or >1e5, seed 42)
+# generated: 2026-09-22 01:39 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant,p_perm,p_perm_bonferroni,significant_perm,n_perms
+BLCA,BIOS,v2_benchmark_600ep_2026-09-10,gender,DISCRETE,tested,7.068363281358877,0.13231934107657892,0.7939160464594734,False,0.146,0.8759999999999999,False,1000
+BLCA,BIOS,v2_benchmark_600ep_2026-09-10,age_at_initial_pathologic_diagnosis,NUMERIC,tested,24.439518477844274,6.520029160669995e-05,0.0003912017496401997,True,0.0,0.0,True,1000
+BLCA,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_M,DISCRETE,tested,55.66859672232626,1.3729749434375078e-07,8.237849660625046e-07,True,0.0,0.0,True,1000
+BLCA,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_N,DISCRETE,tested,43.769693569317724,0.00021378969677018862,0.0012827381806211316,True,0.001,0.006,True,1000
+BLCA,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_T,DISCRETE,tested,88.60803251137908,7.772419592070546e-05,0.00046634517552423274,True,0.0,0.0,True,1000
+BLCA,BIOS,v2_benchmark_600ep_2026-09-10,pathologic_stage,DISCRETE,tested,52.92742000866012,4.243657671082676e-07,2.5461946026496056e-06,True,0.0,0.0,True,1000

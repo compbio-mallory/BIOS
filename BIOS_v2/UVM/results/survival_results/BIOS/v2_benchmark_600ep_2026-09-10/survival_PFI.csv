@@ -1,0 +1,4 @@
+# source: UVM/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# generated: 2026-09-12 13:52 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+UVM,BIOS,v2_benchmark_600ep_2026-09-10,PFI,79,29,4,21.9879,6.560988900819172e-05,4.183,0.7572

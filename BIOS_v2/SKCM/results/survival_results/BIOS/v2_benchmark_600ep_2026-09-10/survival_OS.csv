@@ -1,0 +1,4 @@
+# source: SKCM/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# generated: 2026-09-12 13:52 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+SKCM,BIOS,v2_benchmark_600ep_2026-09-10,OS,431,204,4,30.8708,9.050109997217857e-07,6.0433,0.6161

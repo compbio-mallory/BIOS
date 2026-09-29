@@ -1,0 +1,15 @@
+=== DCC SKCM fd=256 | Fri Sep 18 04:37:59 PM EDT 2026 ===
+4
+Epoch [0/600]	 Loss: 81.25970554351807
+Epoch [100/600]	 Loss: 66.50566101074219
+Epoch [200/600]	 Loss: 64.43900775909424
+Epoch [300/600]	 Loss: 62.81777286529541
+Epoch [400/600]	 Loss: 61.41022205352783
+Epoch [500/600]	 Loss: 60.27349662780762
+Epoch [600/600]	 Loss: 58.93439292907715
+range(0, 601)
+### Creating features from model ###
+Features shape (446, 256)
+=== convert clusters ===
+SKCM: 446 patients, 4 clusters {0: 123, 1: 116, 2: 107, 3: 100} -> /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/SKCM/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+=== DONE Fri Sep 18 07:32:00 PM EDT 2026 ===

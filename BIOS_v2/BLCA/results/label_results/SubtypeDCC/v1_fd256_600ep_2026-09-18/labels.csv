@@ -1,0 +1,13 @@
+# source: BLCA/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+# clinical: BLCA/raw/BLCA_clinicalMatrix.txt
+# tested: 6 of 6 parameters
+# significant after Bonferroni: analytic 5, permutation 5
+# permutation: port of benchmark.R get.empirical.clinical (batches of 1000, stop when CI excludes 0.05 or >1e5, seed 42)
+# generated: 2026-09-22 01:40 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant,p_perm,p_perm_bonferroni,significant_perm,n_perms
+BLCA,SubtypeDCC,v1_fd256_600ep_2026-09-18,gender,DISCRETE,tested,9.090502049257482,0.0588767422689965,0.353260453613979,False,0.058,0.34800000000000003,False,4000
+BLCA,SubtypeDCC,v1_fd256_600ep_2026-09-18,age_at_initial_pathologic_diagnosis,NUMERIC,tested,29.178084889745914,7.192482426727639e-06,4.315489456036583e-05,True,0.0,0.0,True,1000
+BLCA,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_M,DISCRETE,tested,48.317457389292635,2.7520338625041954e-06,1.651220317502517e-05,True,0.0,0.0,True,1000
+BLCA,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_N,DISCRETE,tested,48.02053542380244,4.7148459663855634e-05,0.0002828907579831338,True,0.0,0.0,True,1000
+BLCA,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_T,DISCRETE,tested,95.24814939255253,1.2144259849417241e-05,7.286555909650344e-05,True,0.0,0.0,True,1000
+BLCA,SubtypeDCC,v1_fd256_600ep_2026-09-18,pathologic_stage,DISCRETE,tested,55.47450180211392,1.4877428274341985e-07,8.926456964605191e-07,True,0.0,0.0,True,1000

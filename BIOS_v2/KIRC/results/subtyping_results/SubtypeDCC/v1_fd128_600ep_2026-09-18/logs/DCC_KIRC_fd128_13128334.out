@@ -1,0 +1,15 @@
+=== DCC KIRC fd=128 | Fri Sep 18 04:37:57 PM EDT 2026 ===
+4
+Epoch [0/600]	 Loss: 92.0023832321167
+Epoch [100/600]	 Loss: 79.3197021484375
+Epoch [200/600]	 Loss: 78.81215000152588
+Epoch [300/600]	 Loss: 73.91080570220947
+Epoch [400/600]	 Loss: 71.68325757980347
+Epoch [500/600]	 Loss: 70.50581932067871
+Epoch [600/600]	 Loss: 70.03090858459473
+range(0, 601)
+### Creating features from model ###
+Features shape (488, 256)
+=== convert clusters ===
+KIRC: 488 patients, 4 clusters {0: 123, 1: 96, 2: 143, 3: 126} -> /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/KIRC/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+=== DONE Fri Sep 18 06:32:50 PM EDT 2026 ===

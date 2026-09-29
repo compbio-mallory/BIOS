@@ -1,0 +1,5 @@
+# source: STAD/results/subtyping_results/BIOS/v2_biodim0_seed42_600ep_2026-09-28/clusters.csv
+# generated: 2026-09-28 15:15 by survival_analysis.py
+covariate,coef,HR,p
+cluster_1,0.1565357210452151,1.1694525356398477,0.43558281022153156
+cluster_2,0.4401803171829665,1.5529872235470508,0.02772092331595032

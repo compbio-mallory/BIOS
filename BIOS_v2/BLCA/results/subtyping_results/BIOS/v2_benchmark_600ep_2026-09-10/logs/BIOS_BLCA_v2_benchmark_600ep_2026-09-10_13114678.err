@@ -1,0 +1,1 @@
+/var/spool/slurmd/job13114678/slurm_script: line 23: 3844684 Floating point exception(core dumped) $PYBIN train_bioanchor.py --config /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BLCA/configs/BIOS_v2_benchmark_600ep_2026-09-10.yaml

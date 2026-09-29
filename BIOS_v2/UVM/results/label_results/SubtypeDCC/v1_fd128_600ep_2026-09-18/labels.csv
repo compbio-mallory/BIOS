@@ -1,0 +1,13 @@
+# source: UVM/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+# clinical: UVM/raw/UVM_clinicalMatrix.txt
+# tested: 6 of 6 parameters
+# significant after Bonferroni: analytic 0, permutation 0
+# permutation: port of benchmark.R get.empirical.clinical (batches of 1000, stop when CI excludes 0.05 or >1e5, seed 42)
+# generated: 2026-09-22 01:39 by extract_labels.py
+cancer,method,version,parameter,type,status,statistic,p_value,p_bonferroni,significant,p_perm,p_perm_bonferroni,significant_perm,n_perms
+UVM,SubtypeDCC,v1_fd128_600ep_2026-09-18,gender,DISCRETE,tested,2.5413424629110906,0.46786588446226285,1.0,False,0.476,1.0,False,1000
+UVM,SubtypeDCC,v1_fd128_600ep_2026-09-18,age_at_initial_pathologic_diagnosis,NUMERIC,tested,5.6386783125297,0.13057542974599687,0.7834525784759812,False,0.123,0.738,False,1000
+UVM,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_M,DISCRETE,tested,9.979313976229879,0.35216246406599216,1.0,False,0.392,1.0,False,1000
+UVM,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_N,DISCRETE,tested,0.43479232396538464,0.9329650471740139,1.0,False,0.945,1.0,False,1000
+UVM,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_T,DISCRETE,tested,25.058979147214437,0.7221605594124962,1.0,False,0.834,1.0,False,1000
+UVM,SubtypeDCC,v1_fd128_600ep_2026-09-18,pathologic_stage,DISCRETE,tested,21.50718285166992,0.12139218738979435,0.7283531243387661,False,0.107,0.642,False,1000

@@ -1,0 +1,4 @@
+# source: BRCA/results/subtyping_results/BIOS/v2_biodim0_seed21_600ep_2026-09-28/clusters.csv
+# generated: 2026-09-28 15:15 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+BRCA,BIOS,v2_biodim0_seed21_600ep_2026-09-28,OS,1029,140,5,12.406,0.01457444807358618,1.8364,0.596

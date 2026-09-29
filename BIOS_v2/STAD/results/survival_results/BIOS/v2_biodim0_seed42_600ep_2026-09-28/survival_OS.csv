@@ -1,0 +1,4 @@
+# source: STAD/results/subtyping_results/BIOS/v2_biodim0_seed42_600ep_2026-09-28/clusters.csv
+# generated: 2026-09-28 15:15 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+STAD,BIOS,v2_biodim0_seed42_600ep_2026-09-28,OS,402,154,3,5.1274,0.07701947259468528,1.1134,0.5569

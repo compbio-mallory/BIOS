@@ -1,0 +1,5 @@
+# source: LUAD/results/subtyping_results/SubtypeDCC/v1_fd256_600ep_2026-09-18/clusters.csv
+# generated: 2026-09-21 11:11 by survival_analysis.py
+covariate,coef,HR,p
+cluster_1,-0.5290591790992373,0.5891590021179043,0.0023867412269093923
+cluster_2,-0.2669061069153239,0.7657449662470658,0.13524679352171165

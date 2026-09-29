@@ -1,0 +1,15 @@
+=== DCC LUAD fd=128 | Mon Sep 21 11:28:27 AM EDT 2026 ===
+3
+Epoch [0/600]	 Loss: 89.40322971343994
+Epoch [100/600]	 Loss: 80.0437421798706
+Epoch [200/600]	 Loss: 80.35808181762695
+Epoch [300/600]	 Loss: 81.59883785247803
+Epoch [400/600]	 Loss: 79.797776222229
+Epoch [500/600]	 Loss: nan
+Epoch [600/600]	 Loss: nan
+range(0, 601)
+### Creating features from model ###
+Features shape (490, 256)
+=== convert clusters ===
+LUAD: 490 patients, 1 clusters {0: 490} -> /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/LUAD/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-21/clusters.csv
+=== DONE Mon Sep 21 01:11:51 PM EDT 2026 ===

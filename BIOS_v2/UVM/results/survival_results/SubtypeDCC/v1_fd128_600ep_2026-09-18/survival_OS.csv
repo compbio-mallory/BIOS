@@ -1,0 +1,4 @@
+# source: UVM/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+# generated: 2026-09-21 11:11 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+UVM,SubtypeDCC,v1_fd128_600ep_2026-09-18,OS,80,23,4,29.4505,1.8007792361190548e-06,5.7445,0.8146

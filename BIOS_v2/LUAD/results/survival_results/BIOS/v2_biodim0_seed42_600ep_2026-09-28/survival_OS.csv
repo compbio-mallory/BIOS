@@ -1,0 +1,4 @@
+# source: LUAD/results/subtyping_results/BIOS/v2_biodim0_seed42_600ep_2026-09-28/clusters.csv
+# generated: 2026-09-28 15:14 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+LUAD,BIOS,v2_biodim0_seed42_600ep_2026-09-28,OS,481,173,3,6.2127,0.044764337871424226,1.3491,0.5656

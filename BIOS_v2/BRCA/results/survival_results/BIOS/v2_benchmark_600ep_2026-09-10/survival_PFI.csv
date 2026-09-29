@@ -1,0 +1,4 @@
+# source: BRCA/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv
+# generated: 2026-09-12 13:52 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+BRCA,BIOS,v2_benchmark_600ep_2026-09-10,PFI,1029,136,5,5.7241,0.22072172134623605,0.6562,0.5903

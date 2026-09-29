@@ -1,14 +1,37 @@
-/data/raw
-/save
-
-# Python caches
+# ---- Python ----
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
 
-# Pickled caches (regenerable)
+# ---- Model checkpoints / large artifacts ----
+*.tar
+*.pth
+*.ckpt
 *.pkl
+*.fea
+*.zip
 
-# OS / editor
+# ---- Raw data (not versioned; downloaded from UCSC Xena / TCGA) ----
+BIOS_v2/*/raw/
+BIOS_v2/*/raw_original/
+
+# ---- Not part of this repo ----
+/BIOS_v1/
+/Subtype-GAN/
+/MOGONET/
+/NEMO/
+/reference_data/
+/scratch/
+/UCEC_clinicalMatrix.txt
+/job.slurm
+
+# ---- OS / editor ----
 .DS_Store
+Thumbs.db
 .vscode/
 .idea/
+*.swp
+*.tmp
+
+/subtype_file/

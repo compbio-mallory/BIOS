@@ -1,0 +1,4 @@
+# source: SKCM/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+# generated: 2026-09-21 11:10 by survival_analysis.py
+cancer,method,version,endpoint,n,events,clusters,logrank_chi2,logrank_p,neglog10_p,c_index
+SKCM,SubtypeDCC,v1_fd128_600ep_2026-09-18,OS,431,204,4,31.7393,5.939132469576906e-07,6.2263,0.6103

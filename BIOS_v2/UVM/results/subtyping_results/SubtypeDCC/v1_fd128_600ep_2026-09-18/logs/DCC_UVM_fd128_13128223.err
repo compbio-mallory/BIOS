@@ -1,0 +1,3 @@
+usage: train.py [-h] [--cancer_type CANCER_TYPE] [--batch_size BATCH_SIZE]
+                [--cluster_number CLUSTER_NUMBER]
+train.py: error: unrecognized arguments: --feature_dim 128

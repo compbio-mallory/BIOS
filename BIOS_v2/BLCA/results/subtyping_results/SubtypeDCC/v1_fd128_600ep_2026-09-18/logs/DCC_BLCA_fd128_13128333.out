@@ -1,0 +1,15 @@
+=== DCC BLCA fd=128 | Fri Sep 18 04:37:56 PM EDT 2026 ===
+5
+Epoch [0/600]	 Loss: 79.92861843109131
+Epoch [100/600]	 Loss: 68.08217716217041
+Epoch [200/600]	 Loss: 64.29339694976807
+Epoch [300/600]	 Loss: 62.288063526153564
+Epoch [400/600]	 Loss: 59.70940351486206
+Epoch [500/600]	 Loss: 58.81867742538452
+Epoch [600/600]	 Loss: 58.39986181259155
+range(0, 601)
+### Creating features from model ###
+Features shape (398, 256)
+=== convert clusters ===
+BLCA: 398 patients, 5 clusters {0: 75, 1: 79, 2: 91, 3: 61, 4: 92} -> /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BLCA/results/subtyping_results/SubtypeDCC/v1_fd128_600ep_2026-09-18/clusters.csv
+=== DONE Fri Sep 18 06:07:13 PM EDT 2026 ===

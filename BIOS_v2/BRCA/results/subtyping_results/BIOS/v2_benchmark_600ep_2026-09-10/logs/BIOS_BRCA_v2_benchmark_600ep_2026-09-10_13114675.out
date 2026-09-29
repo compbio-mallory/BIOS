@@ -1,0 +1,1248 @@
+=== config ===
+# BIOS v2_benchmark_600ep_2026-09-10 — BRCA
+cancer_type:      BRCA
+cluster_number:   5
+head_type:        linear
+bio_dim:          16
+n_anchors:        40
+bio_anchor_file:  /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/anchors/bio_anchors_BRCA_gsva_H40.csv
+epochs:           600
+lambda_bio:       0.1
+batch_size:       64
+seed:             42
+model_path:       /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/checkpoint
+=== train: Fri Sep 11 12:46:00 EDT 2026 ===
+[config] loaded /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/configs/BIOS_v2_benchmark_600ep_2026-09-10.yaml
+[config]   cancer_type: BRCA
+[config]   cluster_number: 5
+[config]   head_type: linear
+[config]   bio_dim: 16
+[config]   n_anchors: 40
+[config]   bio_anchor_file: /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/anchors/bio_anchors_BRCA_gsva_H40.csv
+[config]   epochs: 600
+[config]   lambda_bio: 0.1
+[config]   batch_size: 64
+[config]   seed: 42
+[config]   model_path: /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/checkpoint
+Head type    : linear
+Cancer       : BRCA | bio_dim: 16 | lambda_bio: 0.1
+Bio anchor   : /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/anchors/bio_anchors_BRCA_gsva_H40.csv
+Cluster num  : 5
+Epochs       : 600
+[dataloader] Loaded bio-anchors from /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/anchors/bio_anchors_BRCA_gsva_H40.csv: torch.Size([1031, 40])
+Device       : cpu
+Model params : 73,947,597
+Epoch [0/600] Step [0/17] Loss: 7.1249 Bio: 0.9006 GateEnt: nan GateDiv: nan
+Epoch [0/600] Total Loss: 118.8726
+Epoch [1/600] Step [0/17] Loss: 7.1342 Bio: 1.0062 GateEnt: nan GateDiv: nan
+Epoch [1/600] Total Loss: 118.2659
+Epoch [2/600] Step [0/17] Loss: 6.9775 Bio: 0.9923 GateEnt: nan GateDiv: nan
+Epoch [2/600] Total Loss: 117.1433
+Epoch [3/600] Step [0/17] Loss: 7.0312 Bio: 0.7615 GateEnt: nan GateDiv: nan
+Epoch [3/600] Total Loss: 116.4065
+Epoch [4/600] Step [0/17] Loss: 6.7282 Bio: 0.9030 GateEnt: nan GateDiv: nan
+Epoch [4/600] Total Loss: 112.7430
+Epoch [5/600] Step [0/17] Loss: 6.8241 Bio: 0.9421 GateEnt: nan GateDiv: nan
+Epoch [5/600] Total Loss: 111.4856
+Epoch [6/600] Step [0/17] Loss: 6.7111 Bio: 0.8446 GateEnt: nan GateDiv: nan
+Epoch [6/600] Total Loss: 109.9937
+Epoch [7/600] Step [0/17] Loss: 6.5626 Bio: 0.9914 GateEnt: nan GateDiv: nan
+Epoch [7/600] Total Loss: 111.4525
+Epoch [8/600] Step [0/17] Loss: 6.7740 Bio: 0.9388 GateEnt: nan GateDiv: nan
+Epoch [8/600] Total Loss: 111.2848
+Epoch [9/600] Step [0/17] Loss: 6.4450 Bio: 0.8911 GateEnt: nan GateDiv: nan
+Epoch [9/600] Total Loss: 108.5495
+Epoch [10/600] Step [0/17] Loss: 7.0217 Bio: 0.9345 GateEnt: nan GateDiv: nan
+Epoch [10/600] Total Loss: 108.8477
+Epoch [11/600] Step [0/17] Loss: 6.5545 Bio: 0.9128 GateEnt: nan GateDiv: nan
+Epoch [11/600] Total Loss: 109.6854
+Epoch [12/600] Step [0/17] Loss: 6.5599 Bio: 0.8974 GateEnt: nan GateDiv: nan
+Epoch [12/600] Total Loss: 107.3962
+Epoch [13/600] Step [0/17] Loss: 6.6655 Bio: 0.9171 GateEnt: nan GateDiv: nan
+Epoch [13/600] Total Loss: 107.5649
+Epoch [14/600] Step [0/17] Loss: 6.4619 Bio: 0.9516 GateEnt: nan GateDiv: nan
+Epoch [14/600] Total Loss: 106.8240
+Epoch [15/600] Step [0/17] Loss: 6.5417 Bio: 0.8599 GateEnt: nan GateDiv: nan
+Epoch [15/600] Total Loss: 108.9292
+Epoch [16/600] Step [0/17] Loss: 6.2774 Bio: 0.9466 GateEnt: nan GateDiv: nan
+Epoch [16/600] Total Loss: 107.3058
+Epoch [17/600] Step [0/17] Loss: 6.2671 Bio: 0.8584 GateEnt: nan GateDiv: nan
+Epoch [17/600] Total Loss: 108.2048
+Epoch [18/600] Step [0/17] Loss: 6.5454 Bio: 0.9204 GateEnt: nan GateDiv: nan
+Epoch [18/600] Total Loss: 107.5764
+Epoch [19/600] Step [0/17] Loss: 6.4269 Bio: 0.8977 GateEnt: nan GateDiv: nan
+Epoch [19/600] Total Loss: 107.6422
+Epoch [20/600] Step [0/17] Loss: 6.4336 Bio: 0.9511 GateEnt: nan GateDiv: nan
+Epoch [20/600] Total Loss: 106.6944
+Epoch [21/600] Step [0/17] Loss: 6.4375 Bio: 0.9024 GateEnt: nan GateDiv: nan
+Epoch [21/600] Total Loss: 106.1493
+Epoch [22/600] Step [0/17] Loss: 6.2940 Bio: 0.9313 GateEnt: nan GateDiv: nan
+Epoch [22/600] Total Loss: 105.5884
+Epoch [23/600] Step [0/17] Loss: 6.3369 Bio: 0.8276 GateEnt: nan GateDiv: nan
+Epoch [23/600] Total Loss: 107.5288
+Epoch [24/600] Step [0/17] Loss: 6.3320 Bio: 0.8903 GateEnt: nan GateDiv: nan
+Epoch [24/600] Total Loss: 106.7270
+Epoch [25/600] Step [0/17] Loss: 6.3521 Bio: 0.7763 GateEnt: nan GateDiv: nan
+Epoch [25/600] Total Loss: 105.4087
+Epoch [26/600] Step [0/17] Loss: 6.5338 Bio: 0.8919 GateEnt: nan GateDiv: nan
+Epoch [26/600] Total Loss: 105.7362
+Epoch [27/600] Step [0/17] Loss: 6.5230 Bio: 0.7775 GateEnt: nan GateDiv: nan
+Epoch [27/600] Total Loss: 104.8844
+Epoch [28/600] Step [0/17] Loss: 6.2599 Bio: 1.0383 GateEnt: nan GateDiv: nan
+Epoch [28/600] Total Loss: 105.2974
+Epoch [29/600] Step [0/17] Loss: 6.1339 Bio: 0.8805 GateEnt: nan GateDiv: nan
+Epoch [29/600] Total Loss: 104.8611
+Epoch [30/600] Step [0/17] Loss: 6.2329 Bio: 0.8863 GateEnt: nan GateDiv: nan
+Epoch [30/600] Total Loss: 103.6303
+Epoch [31/600] Step [0/17] Loss: 6.1958 Bio: 0.9354 GateEnt: nan GateDiv: nan
+Epoch [31/600] Total Loss: 104.1511
+Epoch [32/600] Step [0/17] Loss: 6.2409 Bio: 0.8092 GateEnt: nan GateDiv: nan
+Epoch [32/600] Total Loss: 103.8971
+Epoch [33/600] Step [0/17] Loss: 6.2004 Bio: 0.8626 GateEnt: nan GateDiv: nan
+Epoch [33/600] Total Loss: 104.3841
+Epoch [34/600] Step [0/17] Loss: 6.1952 Bio: 0.9197 GateEnt: nan GateDiv: nan
+Epoch [34/600] Total Loss: 104.8086
+Epoch [35/600] Step [0/17] Loss: 6.3616 Bio: 0.7715 GateEnt: nan GateDiv: nan
+Epoch [35/600] Total Loss: 104.2033
+Epoch [36/600] Step [0/17] Loss: 6.1540 Bio: 0.9407 GateEnt: nan GateDiv: nan
+Epoch [36/600] Total Loss: 104.1578
+Epoch [37/600] Step [0/17] Loss: 6.2300 Bio: 0.9239 GateEnt: nan GateDiv: nan
+Epoch [37/600] Total Loss: 104.6955
+Epoch [38/600] Step [0/17] Loss: 6.3859 Bio: 0.7677 GateEnt: nan GateDiv: nan
+Epoch [38/600] Total Loss: 103.0321
+Epoch [39/600] Step [0/17] Loss: 6.2485 Bio: 0.9012 GateEnt: nan GateDiv: nan
+Epoch [39/600] Total Loss: 104.0688
+Epoch [40/600] Step [0/17] Loss: 6.2004 Bio: 0.8038 GateEnt: nan GateDiv: nan
+Epoch [40/600] Total Loss: 102.7427
+Epoch [41/600] Step [0/17] Loss: 6.0609 Bio: 0.8410 GateEnt: nan GateDiv: nan
+Epoch [41/600] Total Loss: 104.1147
+Epoch [42/600] Step [0/17] Loss: 6.1388 Bio: 0.8734 GateEnt: nan GateDiv: nan
+Epoch [42/600] Total Loss: 104.9361
+Epoch [43/600] Step [0/17] Loss: 6.1019 Bio: 0.9392 GateEnt: nan GateDiv: nan
+Epoch [43/600] Total Loss: 103.7076
+Epoch [44/600] Step [0/17] Loss: 6.2395 Bio: 0.8659 GateEnt: nan GateDiv: nan
+Epoch [44/600] Total Loss: 103.1253
+Epoch [45/600] Step [0/17] Loss: 6.2286 Bio: 0.8781 GateEnt: nan GateDiv: nan
+Epoch [45/600] Total Loss: 102.4528
+Epoch [46/600] Step [0/17] Loss: 6.0727 Bio: 0.9088 GateEnt: nan GateDiv: nan
+Epoch [46/600] Total Loss: 101.1525
+Epoch [47/600] Step [0/17] Loss: 6.1565 Bio: 0.8521 GateEnt: nan GateDiv: nan
+Epoch [47/600] Total Loss: 103.5121
+Epoch [48/600] Step [0/17] Loss: 6.2988 Bio: 0.8587 GateEnt: nan GateDiv: nan
+Epoch [48/600] Total Loss: 101.7096
+Epoch [49/600] Step [0/17] Loss: 6.2545 Bio: 0.8945 GateEnt: nan GateDiv: nan
+Epoch [49/600] Total Loss: 102.6926
+Epoch [50/600] Step [0/17] Loss: 6.2596 Bio: 0.8503 GateEnt: nan GateDiv: nan
+Epoch [50/600] Total Loss: 101.8150
+Epoch [51/600] Step [0/17] Loss: 6.1806 Bio: 0.9418 GateEnt: nan GateDiv: nan
+Epoch [51/600] Total Loss: 102.2271
+Epoch [52/600] Step [0/17] Loss: 6.3299 Bio: 0.7637 GateEnt: nan GateDiv: nan
+Epoch [52/600] Total Loss: 102.2067
+Epoch [53/600] Step [0/17] Loss: 6.2313 Bio: 0.8424 GateEnt: nan GateDiv: nan
+Epoch [53/600] Total Loss: 102.0739
+Epoch [54/600] Step [0/17] Loss: 6.3089 Bio: 0.8752 GateEnt: nan GateDiv: nan
+Epoch [54/600] Total Loss: 103.0308
+Epoch [55/600] Step [0/17] Loss: 6.3248 Bio: 0.8294 GateEnt: nan GateDiv: nan
+Epoch [55/600] Total Loss: 102.0526
+Epoch [56/600] Step [0/17] Loss: 6.3231 Bio: 0.8218 GateEnt: nan GateDiv: nan
+Epoch [56/600] Total Loss: 102.5409
+Epoch [57/600] Step [0/17] Loss: 6.0923 Bio: 1.0283 GateEnt: nan GateDiv: nan
+Epoch [57/600] Total Loss: 101.5844
+Epoch [58/600] Step [0/17] Loss: 6.3189 Bio: 0.8205 GateEnt: nan GateDiv: nan
+Epoch [58/600] Total Loss: 101.7976
+Epoch [59/600] Step [0/17] Loss: 6.2219 Bio: 0.8453 GateEnt: nan GateDiv: nan
+Epoch [59/600] Total Loss: 101.9423
+Epoch [60/600] Step [0/17] Loss: 6.0793 Bio: 0.9141 GateEnt: nan GateDiv: nan
+Epoch [60/600] Total Loss: 100.2402
+Epoch [61/600] Step [0/17] Loss: 5.9703 Bio: 0.8142 GateEnt: nan GateDiv: nan
+Epoch [61/600] Total Loss: 100.0399
+Epoch [62/600] Step [0/17] Loss: 6.2561 Bio: 0.8094 GateEnt: nan GateDiv: nan
+Epoch [62/600] Total Loss: 100.5222
+Epoch [63/600] Step [0/17] Loss: 6.1687 Bio: 0.8009 GateEnt: nan GateDiv: nan
+Epoch [63/600] Total Loss: 102.4019
+Epoch [64/600] Step [0/17] Loss: 6.0668 Bio: 0.9543 GateEnt: nan GateDiv: nan
+Epoch [64/600] Total Loss: 100.8783
+Epoch [65/600] Step [0/17] Loss: 6.1252 Bio: 0.8629 GateEnt: nan GateDiv: nan
+Epoch [65/600] Total Loss: 100.6573
+Epoch [66/600] Step [0/17] Loss: 5.9770 Bio: 0.7742 GateEnt: nan GateDiv: nan
+Epoch [66/600] Total Loss: 100.2187
+Epoch [67/600] Step [0/17] Loss: 6.0799 Bio: 0.8174 GateEnt: nan GateDiv: nan
+Epoch [67/600] Total Loss: 101.1872
+Epoch [68/600] Step [0/17] Loss: 6.1010 Bio: 0.8325 GateEnt: nan GateDiv: nan
+Epoch [68/600] Total Loss: 100.5129
+Epoch [69/600] Step [0/17] Loss: 6.0206 Bio: 0.8464 GateEnt: nan GateDiv: nan
+Epoch [69/600] Total Loss: 100.5886
+Epoch [70/600] Step [0/17] Loss: 5.9509 Bio: 0.7229 GateEnt: nan GateDiv: nan
+Epoch [70/600] Total Loss: 99.8872
+Epoch [71/600] Step [0/17] Loss: 6.2417 Bio: 0.8627 GateEnt: nan GateDiv: nan
+Epoch [71/600] Total Loss: 100.9996
+Epoch [72/600] Step [0/17] Loss: 5.9013 Bio: 1.0328 GateEnt: nan GateDiv: nan
+Epoch [72/600] Total Loss: 100.7850
+Epoch [73/600] Step [0/17] Loss: 6.0058 Bio: 0.8592 GateEnt: nan GateDiv: nan
+Epoch [73/600] Total Loss: 98.5011
+Epoch [74/600] Step [0/17] Loss: 5.9336 Bio: 0.8741 GateEnt: nan GateDiv: nan
+Epoch [74/600] Total Loss: 98.2108
+Epoch [75/600] Step [0/17] Loss: 5.9579 Bio: 0.7441 GateEnt: nan GateDiv: nan
+Epoch [75/600] Total Loss: 100.5754
+Epoch [76/600] Step [0/17] Loss: 5.9989 Bio: 0.8865 GateEnt: nan GateDiv: nan
+Epoch [76/600] Total Loss: 99.5844
+Epoch [77/600] Step [0/17] Loss: 5.9764 Bio: 0.8075 GateEnt: nan GateDiv: nan
+Epoch [77/600] Total Loss: 99.6114
+Epoch [78/600] Step [0/17] Loss: 6.1473 Bio: 0.8141 GateEnt: nan GateDiv: nan
+Epoch [78/600] Total Loss: 101.0707
+Epoch [79/600] Step [0/17] Loss: 5.8768 Bio: 0.7759 GateEnt: nan GateDiv: nan
+Epoch [79/600] Total Loss: 99.5366
+Epoch [80/600] Step [0/17] Loss: 5.7261 Bio: 0.9513 GateEnt: nan GateDiv: nan
+Epoch [80/600] Total Loss: 98.6912
+Epoch [81/600] Step [0/17] Loss: 5.9348 Bio: 0.9215 GateEnt: nan GateDiv: nan
+Epoch [81/600] Total Loss: 99.9032
+Epoch [82/600] Step [0/17] Loss: 5.9325 Bio: 0.9064 GateEnt: nan GateDiv: nan
+Epoch [82/600] Total Loss: 98.7148
+Epoch [83/600] Step [0/17] Loss: 6.0510 Bio: 0.8904 GateEnt: nan GateDiv: nan
+Epoch [83/600] Total Loss: 100.2407
+Epoch [84/600] Step [0/17] Loss: 5.8485 Bio: 0.8488 GateEnt: nan GateDiv: nan
+Epoch [84/600] Total Loss: 99.4290
+Epoch [85/600] Step [0/17] Loss: 6.1581 Bio: 0.8473 GateEnt: nan GateDiv: nan
+Epoch [85/600] Total Loss: 98.9053
+Epoch [86/600] Step [0/17] Loss: 5.7625 Bio: 0.8090 GateEnt: nan GateDiv: nan
+Epoch [86/600] Total Loss: 101.1232
+Epoch [87/600] Step [0/17] Loss: 5.8367 Bio: 0.8194 GateEnt: nan GateDiv: nan
+Epoch [87/600] Total Loss: 100.2072
+Epoch [88/600] Step [0/17] Loss: 6.0992 Bio: 0.9028 GateEnt: nan GateDiv: nan
+Epoch [88/600] Total Loss: 99.5421
+Epoch [89/600] Step [0/17] Loss: 6.0384 Bio: 0.9018 GateEnt: nan GateDiv: nan
+Epoch [89/600] Total Loss: 98.1617
+Epoch [90/600] Step [0/17] Loss: 6.1350 Bio: 0.7166 GateEnt: nan GateDiv: nan
+Epoch [90/600] Total Loss: 98.7152
+Epoch [91/600] Step [0/17] Loss: 6.0066 Bio: 0.9273 GateEnt: nan GateDiv: nan
+Epoch [91/600] Total Loss: 98.5247
+Epoch [92/600] Step [0/17] Loss: 6.3864 Bio: 0.7051 GateEnt: nan GateDiv: nan
+Epoch [92/600] Total Loss: 98.3009
+Epoch [93/600] Step [0/17] Loss: 5.7426 Bio: 0.7843 GateEnt: nan GateDiv: nan
+Epoch [93/600] Total Loss: 99.2627
+Epoch [94/600] Step [0/17] Loss: 5.9363 Bio: 0.8479 GateEnt: nan GateDiv: nan
+Epoch [94/600] Total Loss: 98.6853
+Epoch [95/600] Step [0/17] Loss: 5.8027 Bio: 0.7620 GateEnt: nan GateDiv: nan
+Epoch [95/600] Total Loss: 97.6343
+Epoch [96/600] Step [0/17] Loss: 6.0934 Bio: 0.8899 GateEnt: nan GateDiv: nan
+Epoch [96/600] Total Loss: 98.3860
+Epoch [97/600] Step [0/17] Loss: 5.8139 Bio: 0.8180 GateEnt: nan GateDiv: nan
+Epoch [97/600] Total Loss: 99.0943
+Epoch [98/600] Step [0/17] Loss: 5.8869 Bio: 0.7559 GateEnt: nan GateDiv: nan
+Epoch [98/600] Total Loss: 99.4918
+Epoch [99/600] Step [0/17] Loss: 5.9429 Bio: 0.8315 GateEnt: nan GateDiv: nan
+Epoch [99/600] Total Loss: 97.9992
+Epoch [100/600] Step [0/17] Loss: 5.8777 Bio: 0.7994 GateEnt: nan GateDiv: nan
+Epoch [100/600] Total Loss: 98.3150
+Epoch [101/600] Step [0/17] Loss: 6.1956 Bio: 0.8157 GateEnt: nan GateDiv: nan
+Epoch [101/600] Total Loss: 97.8148
+Epoch [102/600] Step [0/17] Loss: 5.7459 Bio: 0.9152 GateEnt: nan GateDiv: nan
+Epoch [102/600] Total Loss: 97.3520
+Epoch [103/600] Step [0/17] Loss: 5.7949 Bio: 0.8487 GateEnt: nan GateDiv: nan
+Epoch [103/600] Total Loss: 97.6458
+Epoch [104/600] Step [0/17] Loss: 5.9208 Bio: 0.8781 GateEnt: nan GateDiv: nan
+Epoch [104/600] Total Loss: 98.3035
+Epoch [105/600] Step [0/17] Loss: 6.1106 Bio: 0.7335 GateEnt: nan GateDiv: nan
+Epoch [105/600] Total Loss: 98.7126
+Epoch [106/600] Step [0/17] Loss: 5.9098 Bio: 0.8588 GateEnt: nan GateDiv: nan
+Epoch [106/600] Total Loss: 97.8356
+Epoch [107/600] Step [0/17] Loss: 5.8532 Bio: 0.8833 GateEnt: nan GateDiv: nan
+Epoch [107/600] Total Loss: 99.0638
+Epoch [108/600] Step [0/17] Loss: 5.7468 Bio: 0.8927 GateEnt: nan GateDiv: nan
+Epoch [108/600] Total Loss: 98.7021
+Epoch [109/600] Step [0/17] Loss: 5.9164 Bio: 0.8916 GateEnt: nan GateDiv: nan
+Epoch [109/600] Total Loss: 98.1158
+Epoch [110/600] Step [0/17] Loss: 5.6275 Bio: 0.7982 GateEnt: nan GateDiv: nan
+Epoch [110/600] Total Loss: 96.8712
+Epoch [111/600] Step [0/17] Loss: 6.1048 Bio: 0.8569 GateEnt: nan GateDiv: nan
+Epoch [111/600] Total Loss: 98.1760
+Epoch [112/600] Step [0/17] Loss: 5.8483 Bio: 0.7691 GateEnt: nan GateDiv: nan
+Epoch [112/600] Total Loss: 99.0034
+Epoch [113/600] Step [0/17] Loss: 5.6066 Bio: 0.8408 GateEnt: nan GateDiv: nan
+Epoch [113/600] Total Loss: 98.7924
+Epoch [114/600] Step [0/17] Loss: 5.7164 Bio: 0.7671 GateEnt: nan GateDiv: nan
+Epoch [114/600] Total Loss: 97.6355
+Epoch [115/600] Step [0/17] Loss: 5.8282 Bio: 0.7604 GateEnt: nan GateDiv: nan
+Epoch [115/600] Total Loss: 98.0437
+Epoch [116/600] Step [0/17] Loss: 5.7176 Bio: 0.8738 GateEnt: nan GateDiv: nan
+Epoch [116/600] Total Loss: 96.8866
+Epoch [117/600] Step [0/17] Loss: 5.6696 Bio: 0.9968 GateEnt: nan GateDiv: nan
+Epoch [117/600] Total Loss: 97.2471
+Epoch [118/600] Step [0/17] Loss: 5.5990 Bio: 0.8594 GateEnt: nan GateDiv: nan
+Epoch [118/600] Total Loss: 96.9584
+Epoch [119/600] Step [0/17] Loss: 5.8047 Bio: 0.8647 GateEnt: nan GateDiv: nan
+Epoch [119/600] Total Loss: 96.9160
+Epoch [120/600] Step [0/17] Loss: 5.8534 Bio: 0.7302 GateEnt: nan GateDiv: nan
+Epoch [120/600] Total Loss: 97.3256
+Epoch [121/600] Step [0/17] Loss: 5.6503 Bio: 0.8655 GateEnt: nan GateDiv: nan
+Epoch [121/600] Total Loss: 96.0636
+Epoch [122/600] Step [0/17] Loss: 5.8300 Bio: 0.7433 GateEnt: nan GateDiv: nan
+Epoch [122/600] Total Loss: 97.0121
+Epoch [123/600] Step [0/17] Loss: 6.0368 Bio: 0.8239 GateEnt: nan GateDiv: nan
+Epoch [123/600] Total Loss: 97.2192
+Epoch [124/600] Step [0/17] Loss: 6.0126 Bio: 0.8017 GateEnt: nan GateDiv: nan
+Epoch [124/600] Total Loss: 96.9325
+Epoch [125/600] Step [0/17] Loss: 5.7441 Bio: 0.8081 GateEnt: nan GateDiv: nan
+Epoch [125/600] Total Loss: 98.3281
+Epoch [126/600] Step [0/17] Loss: 5.9336 Bio: 0.7704 GateEnt: nan GateDiv: nan
+Epoch [126/600] Total Loss: 97.2826
+Epoch [127/600] Step [0/17] Loss: 5.9721 Bio: 0.7773 GateEnt: nan GateDiv: nan
+Epoch [127/600] Total Loss: 97.1944
+Epoch [128/600] Step [0/17] Loss: 5.6267 Bio: 0.8310 GateEnt: nan GateDiv: nan
+Epoch [128/600] Total Loss: 96.7495
+Epoch [129/600] Step [0/17] Loss: 5.9608 Bio: 0.8173 GateEnt: nan GateDiv: nan
+Epoch [129/600] Total Loss: 97.1542
+Epoch [130/600] Step [0/17] Loss: 5.8273 Bio: 0.8288 GateEnt: nan GateDiv: nan
+Epoch [130/600] Total Loss: 96.5089
+Epoch [131/600] Step [0/17] Loss: 5.7172 Bio: 0.9073 GateEnt: nan GateDiv: nan
+Epoch [131/600] Total Loss: 97.7338
+Epoch [132/600] Step [0/17] Loss: 5.7197 Bio: 0.7631 GateEnt: nan GateDiv: nan
+Epoch [132/600] Total Loss: 97.1260
+Epoch [133/600] Step [0/17] Loss: 5.9400 Bio: 0.7243 GateEnt: nan GateDiv: nan
+Epoch [133/600] Total Loss: 96.9301
+Epoch [134/600] Step [0/17] Loss: 5.8207 Bio: 0.8377 GateEnt: nan GateDiv: nan
+Epoch [134/600] Total Loss: 96.3337
+Epoch [135/600] Step [0/17] Loss: 5.6364 Bio: 0.7683 GateEnt: nan GateDiv: nan
+Epoch [135/600] Total Loss: 97.4874
+Epoch [136/600] Step [0/17] Loss: 5.8688 Bio: 0.7900 GateEnt: nan GateDiv: nan
+Epoch [136/600] Total Loss: 95.5712
+Epoch [137/600] Step [0/17] Loss: 5.7503 Bio: 0.8575 GateEnt: nan GateDiv: nan
+Epoch [137/600] Total Loss: 96.5405
+Epoch [138/600] Step [0/17] Loss: 5.8387 Bio: 0.7328 GateEnt: nan GateDiv: nan
+Epoch [138/600] Total Loss: 96.1838
+Epoch [139/600] Step [0/17] Loss: 5.7336 Bio: 0.7572 GateEnt: nan GateDiv: nan
+Epoch [139/600] Total Loss: 97.1357
+Epoch [140/600] Step [0/17] Loss: 5.8323 Bio: 0.7610 GateEnt: nan GateDiv: nan
+Epoch [140/600] Total Loss: 97.9856
+Epoch [141/600] Step [0/17] Loss: 5.8361 Bio: 0.8616 GateEnt: nan GateDiv: nan
+Epoch [141/600] Total Loss: 96.5124
+Epoch [142/600] Step [0/17] Loss: 5.8295 Bio: 0.8842 GateEnt: nan GateDiv: nan
+Epoch [142/600] Total Loss: 95.5624
+Epoch [143/600] Step [0/17] Loss: 5.5574 Bio: 0.8106 GateEnt: nan GateDiv: nan
+Epoch [143/600] Total Loss: 97.6349
+Epoch [144/600] Step [0/17] Loss: 5.6517 Bio: 0.8170 GateEnt: nan GateDiv: nan
+Epoch [144/600] Total Loss: 95.4255
+Epoch [145/600] Step [0/17] Loss: 5.8822 Bio: 0.6758 GateEnt: nan GateDiv: nan
+Epoch [145/600] Total Loss: 96.5040
+Epoch [146/600] Step [0/17] Loss: 5.4861 Bio: 0.7395 GateEnt: nan GateDiv: nan
+Epoch [146/600] Total Loss: 98.5075
+Epoch [147/600] Step [0/17] Loss: 5.8298 Bio: 0.7523 GateEnt: nan GateDiv: nan
+Epoch [147/600] Total Loss: 96.6695
+Epoch [148/600] Step [0/17] Loss: 5.7264 Bio: 0.9484 GateEnt: nan GateDiv: nan
+Epoch [148/600] Total Loss: 96.4217
+Epoch [149/600] Step [0/17] Loss: 5.7712 Bio: 0.8467 GateEnt: nan GateDiv: nan
+Epoch [149/600] Total Loss: 96.1700
+Epoch [150/600] Step [0/17] Loss: 5.6433 Bio: 0.8520 GateEnt: nan GateDiv: nan
+Epoch [150/600] Total Loss: 96.3185
+Epoch [151/600] Step [0/17] Loss: 5.8464 Bio: 0.8131 GateEnt: nan GateDiv: nan
+Epoch [151/600] Total Loss: 96.5886
+Epoch [152/600] Step [0/17] Loss: 5.9350 Bio: 0.7733 GateEnt: nan GateDiv: nan
+Epoch [152/600] Total Loss: 96.7716
+Epoch [153/600] Step [0/17] Loss: 5.6986 Bio: 0.8343 GateEnt: nan GateDiv: nan
+Epoch [153/600] Total Loss: 96.4628
+Epoch [154/600] Step [0/17] Loss: 5.5339 Bio: 0.8016 GateEnt: nan GateDiv: nan
+Epoch [154/600] Total Loss: 96.6600
+Epoch [155/600] Step [0/17] Loss: 5.7146 Bio: 0.7932 GateEnt: nan GateDiv: nan
+Epoch [155/600] Total Loss: 95.5328
+Epoch [156/600] Step [0/17] Loss: 5.9801 Bio: 0.7188 GateEnt: nan GateDiv: nan
+Epoch [156/600] Total Loss: 95.1682
+Epoch [157/600] Step [0/17] Loss: 5.8911 Bio: 0.7242 GateEnt: nan GateDiv: nan
+Epoch [157/600] Total Loss: 95.5610
+Epoch [158/600] Step [0/17] Loss: 5.7744 Bio: 0.7670 GateEnt: nan GateDiv: nan
+Epoch [158/600] Total Loss: 96.2229
+Epoch [159/600] Step [0/17] Loss: 5.6716 Bio: 0.7555 GateEnt: nan GateDiv: nan
+Epoch [159/600] Total Loss: 95.9533
+Epoch [160/600] Step [0/17] Loss: 5.5823 Bio: 0.7275 GateEnt: nan GateDiv: nan
+Epoch [160/600] Total Loss: 95.6847
+Epoch [161/600] Step [0/17] Loss: 5.6905 Bio: 0.7227 GateEnt: nan GateDiv: nan
+Epoch [161/600] Total Loss: 95.7134
+Epoch [162/600] Step [0/17] Loss: 5.7371 Bio: 0.7840 GateEnt: nan GateDiv: nan
+Epoch [162/600] Total Loss: 97.4157
+Epoch [163/600] Step [0/17] Loss: 5.7264 Bio: 0.8197 GateEnt: nan GateDiv: nan
+Epoch [163/600] Total Loss: 96.9062
+Epoch [164/600] Step [0/17] Loss: 5.8127 Bio: 0.6605 GateEnt: nan GateDiv: nan
+Epoch [164/600] Total Loss: 94.8569
+Epoch [165/600] Step [0/17] Loss: 5.7235 Bio: 0.7098 GateEnt: nan GateDiv: nan
+Epoch [165/600] Total Loss: 95.4268
+Epoch [166/600] Step [0/17] Loss: 5.7871 Bio: 0.7460 GateEnt: nan GateDiv: nan
+Epoch [166/600] Total Loss: 97.3896
+Epoch [167/600] Step [0/17] Loss: 5.8339 Bio: 0.7588 GateEnt: nan GateDiv: nan
+Epoch [167/600] Total Loss: 96.0127
+Epoch [168/600] Step [0/17] Loss: 5.7825 Bio: 0.8130 GateEnt: nan GateDiv: nan
+Epoch [168/600] Total Loss: 97.4786
+Epoch [169/600] Step [0/17] Loss: 5.7259 Bio: 0.8448 GateEnt: nan GateDiv: nan
+Epoch [169/600] Total Loss: 96.7506
+Epoch [170/600] Step [0/17] Loss: 5.8548 Bio: 0.7388 GateEnt: nan GateDiv: nan
+Epoch [170/600] Total Loss: 95.7167
+Epoch [171/600] Step [0/17] Loss: 5.5706 Bio: 0.7307 GateEnt: nan GateDiv: nan
+Epoch [171/600] Total Loss: 95.7390
+Epoch [172/600] Step [0/17] Loss: 5.7774 Bio: 0.7640 GateEnt: nan GateDiv: nan
+Epoch [172/600] Total Loss: 95.6636
+Epoch [173/600] Step [0/17] Loss: 5.7399 Bio: 0.6757 GateEnt: nan GateDiv: nan
+Epoch [173/600] Total Loss: 96.2747
+Epoch [174/600] Step [0/17] Loss: 6.0100 Bio: 0.6887 GateEnt: nan GateDiv: nan
+Epoch [174/600] Total Loss: 96.0707
+Epoch [175/600] Step [0/17] Loss: 5.7398 Bio: 0.7256 GateEnt: nan GateDiv: nan
+Epoch [175/600] Total Loss: 96.5907
+Epoch [176/600] Step [0/17] Loss: 5.8398 Bio: 0.7157 GateEnt: nan GateDiv: nan
+Epoch [176/600] Total Loss: 95.6972
+Epoch [177/600] Step [0/17] Loss: 5.8278 Bio: 0.6387 GateEnt: nan GateDiv: nan
+Epoch [177/600] Total Loss: 95.9251
+Epoch [178/600] Step [0/17] Loss: 5.6971 Bio: 0.7677 GateEnt: nan GateDiv: nan
+Epoch [178/600] Total Loss: 96.5042
+Epoch [179/600] Step [0/17] Loss: 5.7044 Bio: 0.7264 GateEnt: nan GateDiv: nan
+Epoch [179/600] Total Loss: 95.7362
+Epoch [180/600] Step [0/17] Loss: 5.7873 Bio: 0.6109 GateEnt: nan GateDiv: nan
+Epoch [180/600] Total Loss: 95.3089
+Epoch [181/600] Step [0/17] Loss: 5.7527 Bio: 0.7437 GateEnt: nan GateDiv: nan
+Epoch [181/600] Total Loss: 95.2154
+Epoch [182/600] Step [0/17] Loss: 5.6222 Bio: 0.6988 GateEnt: nan GateDiv: nan
+Epoch [182/600] Total Loss: 95.4397
+Epoch [183/600] Step [0/17] Loss: 5.6064 Bio: 0.6646 GateEnt: nan GateDiv: nan
+Epoch [183/600] Total Loss: 94.0235
+Epoch [184/600] Step [0/17] Loss: 5.6453 Bio: 0.7159 GateEnt: nan GateDiv: nan
+Epoch [184/600] Total Loss: 94.6331
+Epoch [185/600] Step [0/17] Loss: 5.7211 Bio: 0.6239 GateEnt: nan GateDiv: nan
+Epoch [185/600] Total Loss: 94.2679
+Epoch [186/600] Step [0/17] Loss: 5.6042 Bio: 0.6010 GateEnt: nan GateDiv: nan
+Epoch [186/600] Total Loss: 94.9838
+Epoch [187/600] Step [0/17] Loss: 5.7636 Bio: 0.6273 GateEnt: nan GateDiv: nan
+Epoch [187/600] Total Loss: 94.5091
+Epoch [188/600] Step [0/17] Loss: 6.0412 Bio: 0.7891 GateEnt: nan GateDiv: nan
+Epoch [188/600] Total Loss: 94.9187
+Epoch [189/600] Step [0/17] Loss: 5.6414 Bio: 0.6757 GateEnt: nan GateDiv: nan
+Epoch [189/600] Total Loss: 95.1901
+Epoch [190/600] Step [0/17] Loss: 5.5949 Bio: 0.6802 GateEnt: nan GateDiv: nan
+Epoch [190/600] Total Loss: 95.2689
+Epoch [191/600] Step [0/17] Loss: 5.7215 Bio: 0.7610 GateEnt: nan GateDiv: nan
+Epoch [191/600] Total Loss: 95.2904
+Epoch [192/600] Step [0/17] Loss: 5.7993 Bio: 0.7034 GateEnt: nan GateDiv: nan
+Epoch [192/600] Total Loss: 94.9110
+Epoch [193/600] Step [0/17] Loss: 5.6758 Bio: 0.6807 GateEnt: nan GateDiv: nan
+Epoch [193/600] Total Loss: 94.5420
+Epoch [194/600] Step [0/17] Loss: 5.6158 Bio: 0.7559 GateEnt: nan GateDiv: nan
+Epoch [194/600] Total Loss: 94.5660
+Epoch [195/600] Step [0/17] Loss: 5.7017 Bio: 0.7091 GateEnt: nan GateDiv: nan
+Epoch [195/600] Total Loss: 94.9912
+Epoch [196/600] Step [0/17] Loss: 5.6210 Bio: 0.7365 GateEnt: nan GateDiv: nan
+Epoch [196/600] Total Loss: 95.6293
+Epoch [197/600] Step [0/17] Loss: 5.8828 Bio: 0.7153 GateEnt: nan GateDiv: nan
+Epoch [197/600] Total Loss: 95.7393
+Epoch [198/600] Step [0/17] Loss: 5.6968 Bio: 0.6356 GateEnt: nan GateDiv: nan
+Epoch [198/600] Total Loss: 95.2203
+Epoch [199/600] Step [0/17] Loss: 5.8374 Bio: 0.6737 GateEnt: nan GateDiv: nan
+Epoch [199/600] Total Loss: 95.9764
+Epoch [200/600] Step [0/17] Loss: 5.5794 Bio: 0.7138 GateEnt: nan GateDiv: nan
+Epoch [200/600] Total Loss: 95.9059
+Epoch [201/600] Step [0/17] Loss: 5.7317 Bio: 0.6687 GateEnt: nan GateDiv: nan
+Epoch [201/600] Total Loss: 95.2768
+Epoch [202/600] Step [0/17] Loss: 5.8293 Bio: 0.6710 GateEnt: nan GateDiv: nan
+Epoch [202/600] Total Loss: 95.4073
+Epoch [203/600] Step [0/17] Loss: 5.4614 Bio: 0.6232 GateEnt: nan GateDiv: nan
+Epoch [203/600] Total Loss: 95.0034
+Epoch [204/600] Step [0/17] Loss: 5.8316 Bio: 0.6486 GateEnt: nan GateDiv: nan
+Epoch [204/600] Total Loss: 95.1190
+Epoch [205/600] Step [0/17] Loss: 5.5733 Bio: 0.7071 GateEnt: nan GateDiv: nan
+Epoch [205/600] Total Loss: 95.6624
+Epoch [206/600] Step [0/17] Loss: 5.5227 Bio: 0.6899 GateEnt: nan GateDiv: nan
+Epoch [206/600] Total Loss: 94.3888
+Epoch [207/600] Step [0/17] Loss: 5.5828 Bio: 0.6175 GateEnt: nan GateDiv: nan
+Epoch [207/600] Total Loss: 93.7235
+Epoch [208/600] Step [0/17] Loss: 5.6957 Bio: 0.7443 GateEnt: nan GateDiv: nan
+Epoch [208/600] Total Loss: 94.3947
+Epoch [209/600] Step [0/17] Loss: 5.6020 Bio: 0.7077 GateEnt: nan GateDiv: nan
+Epoch [209/600] Total Loss: 92.9068
+Epoch [210/600] Step [0/17] Loss: 5.6761 Bio: 0.6555 GateEnt: nan GateDiv: nan
+Epoch [210/600] Total Loss: 94.2315
+Epoch [211/600] Step [0/17] Loss: 5.6053 Bio: 0.7463 GateEnt: nan GateDiv: nan
+Epoch [211/600] Total Loss: 94.1084
+Epoch [212/600] Step [0/17] Loss: 5.6437 Bio: 0.7391 GateEnt: nan GateDiv: nan
+Epoch [212/600] Total Loss: 94.7922
+Epoch [213/600] Step [0/17] Loss: 5.7660 Bio: 0.6406 GateEnt: nan GateDiv: nan
+Epoch [213/600] Total Loss: 94.8585
+Epoch [214/600] Step [0/17] Loss: 5.6446 Bio: 0.6453 GateEnt: nan GateDiv: nan
+Epoch [214/600] Total Loss: 94.2082
+Epoch [215/600] Step [0/17] Loss: 5.7326 Bio: 0.6957 GateEnt: nan GateDiv: nan
+Epoch [215/600] Total Loss: 95.0657
+Epoch [216/600] Step [0/17] Loss: 5.7984 Bio: 0.6556 GateEnt: nan GateDiv: nan
+Epoch [216/600] Total Loss: 94.3651
+Epoch [217/600] Step [0/17] Loss: 5.7436 Bio: 0.6614 GateEnt: nan GateDiv: nan
+Epoch [217/600] Total Loss: 94.9926
+Epoch [218/600] Step [0/17] Loss: 5.7799 Bio: 0.6985 GateEnt: nan GateDiv: nan
+Epoch [218/600] Total Loss: 94.7553
+Epoch [219/600] Step [0/17] Loss: 5.7662 Bio: 0.5443 GateEnt: nan GateDiv: nan
+Epoch [219/600] Total Loss: 95.6374
+Epoch [220/600] Step [0/17] Loss: 5.7474 Bio: 0.6980 GateEnt: nan GateDiv: nan
+Epoch [220/600] Total Loss: 95.0238
+Epoch [221/600] Step [0/17] Loss: 5.5407 Bio: 0.6595 GateEnt: nan GateDiv: nan
+Epoch [221/600] Total Loss: 94.8086
+Epoch [222/600] Step [0/17] Loss: 5.8741 Bio: 0.6949 GateEnt: nan GateDiv: nan
+Epoch [222/600] Total Loss: 94.2443
+Epoch [223/600] Step [0/17] Loss: 5.5457 Bio: 0.7525 GateEnt: nan GateDiv: nan
+Epoch [223/600] Total Loss: 94.3121
+Epoch [224/600] Step [0/17] Loss: 5.6105 Bio: 0.7131 GateEnt: nan GateDiv: nan
+Epoch [224/600] Total Loss: 95.4576
+Epoch [225/600] Step [0/17] Loss: 5.8128 Bio: 0.6503 GateEnt: nan GateDiv: nan
+Epoch [225/600] Total Loss: 94.4343
+Epoch [226/600] Step [0/17] Loss: 5.5807 Bio: 0.6380 GateEnt: nan GateDiv: nan
+Epoch [226/600] Total Loss: 95.7780
+Epoch [227/600] Step [0/17] Loss: 5.7075 Bio: 0.6520 GateEnt: nan GateDiv: nan
+Epoch [227/600] Total Loss: 95.0439
+Epoch [228/600] Step [0/17] Loss: 5.6892 Bio: 0.6133 GateEnt: nan GateDiv: nan
+Epoch [228/600] Total Loss: 94.5539
+Epoch [229/600] Step [0/17] Loss: 5.8684 Bio: 0.6021 GateEnt: nan GateDiv: nan
+Epoch [229/600] Total Loss: 94.9767
+Epoch [230/600] Step [0/17] Loss: 5.7148 Bio: 0.6403 GateEnt: nan GateDiv: nan
+Epoch [230/600] Total Loss: 94.8960
+Epoch [231/600] Step [0/17] Loss: 5.7409 Bio: 0.6574 GateEnt: nan GateDiv: nan
+Epoch [231/600] Total Loss: 95.6094
+Epoch [232/600] Step [0/17] Loss: 5.7899 Bio: 0.7009 GateEnt: nan GateDiv: nan
+Epoch [232/600] Total Loss: 95.2692
+Epoch [233/600] Step [0/17] Loss: 5.9069 Bio: 0.6483 GateEnt: nan GateDiv: nan
+Epoch [233/600] Total Loss: 95.6565
+Epoch [234/600] Step [0/17] Loss: 5.7557 Bio: 0.6395 GateEnt: nan GateDiv: nan
+Epoch [234/600] Total Loss: 94.8955
+Epoch [235/600] Step [0/17] Loss: 5.5869 Bio: 0.6039 GateEnt: nan GateDiv: nan
+Epoch [235/600] Total Loss: 94.9887
+Epoch [236/600] Step [0/17] Loss: 5.6733 Bio: 0.6174 GateEnt: nan GateDiv: nan
+Epoch [236/600] Total Loss: 94.5075
+Epoch [237/600] Step [0/17] Loss: 5.6422 Bio: 0.5833 GateEnt: nan GateDiv: nan
+Epoch [237/600] Total Loss: 95.6693
+Epoch [238/600] Step [0/17] Loss: 5.7732 Bio: 0.5986 GateEnt: nan GateDiv: nan
+Epoch [238/600] Total Loss: 93.8668
+Epoch [239/600] Step [0/17] Loss: 5.6858 Bio: 0.6526 GateEnt: nan GateDiv: nan
+Epoch [239/600] Total Loss: 96.0284
+Epoch [240/600] Step [0/17] Loss: 5.6556 Bio: 0.6497 GateEnt: nan GateDiv: nan
+Epoch [240/600] Total Loss: 94.5554
+Epoch [241/600] Step [0/17] Loss: 5.5707 Bio: 0.6437 GateEnt: nan GateDiv: nan
+Epoch [241/600] Total Loss: 95.7345
+Epoch [242/600] Step [0/17] Loss: 5.6303 Bio: 0.6765 GateEnt: nan GateDiv: nan
+Epoch [242/600] Total Loss: 95.4024
+Epoch [243/600] Step [0/17] Loss: 5.9038 Bio: 0.6684 GateEnt: nan GateDiv: nan
+Epoch [243/600] Total Loss: 94.6631
+Epoch [244/600] Step [0/17] Loss: 5.7432 Bio: 0.6280 GateEnt: nan GateDiv: nan
+Epoch [244/600] Total Loss: 93.4549
+Epoch [245/600] Step [0/17] Loss: 5.7668 Bio: 0.6583 GateEnt: nan GateDiv: nan
+Epoch [245/600] Total Loss: 94.4023
+Epoch [246/600] Step [0/17] Loss: 5.8002 Bio: 0.6161 GateEnt: nan GateDiv: nan
+Epoch [246/600] Total Loss: 94.1996
+Epoch [247/600] Step [0/17] Loss: 5.7347 Bio: 0.7272 GateEnt: nan GateDiv: nan
+Epoch [247/600] Total Loss: 94.5177
+Epoch [248/600] Step [0/17] Loss: 5.4999 Bio: 0.6428 GateEnt: nan GateDiv: nan
+Epoch [248/600] Total Loss: 94.4345
+Epoch [249/600] Step [0/17] Loss: 5.5738 Bio: 0.6558 GateEnt: nan GateDiv: nan
+Epoch [249/600] Total Loss: 94.3665
+Epoch [250/600] Step [0/17] Loss: 5.8586 Bio: 0.6827 GateEnt: nan GateDiv: nan
+Epoch [250/600] Total Loss: 95.2939
+Epoch [251/600] Step [0/17] Loss: 5.6814 Bio: 0.7057 GateEnt: nan GateDiv: nan
+Epoch [251/600] Total Loss: 95.2489
+Epoch [252/600] Step [0/17] Loss: 5.9347 Bio: 0.5652 GateEnt: nan GateDiv: nan
+Epoch [252/600] Total Loss: 95.0239
+Epoch [253/600] Step [0/17] Loss: 5.7685 Bio: 0.6677 GateEnt: nan GateDiv: nan
+Epoch [253/600] Total Loss: 95.6875
+Epoch [254/600] Step [0/17] Loss: 5.8074 Bio: 0.5963 GateEnt: nan GateDiv: nan
+Epoch [254/600] Total Loss: 94.2725
+Epoch [255/600] Step [0/17] Loss: 5.7817 Bio: 0.5784 GateEnt: nan GateDiv: nan
+Epoch [255/600] Total Loss: 93.7400
+Epoch [256/600] Step [0/17] Loss: 5.7591 Bio: 0.7624 GateEnt: nan GateDiv: nan
+Epoch [256/600] Total Loss: 95.0895
+Epoch [257/600] Step [0/17] Loss: 5.7075 Bio: 0.6384 GateEnt: nan GateDiv: nan
+Epoch [257/600] Total Loss: 93.7810
+Epoch [258/600] Step [0/17] Loss: 5.6088 Bio: 0.6279 GateEnt: nan GateDiv: nan
+Epoch [258/600] Total Loss: 93.8461
+Epoch [259/600] Step [0/17] Loss: 5.5711 Bio: 0.7307 GateEnt: nan GateDiv: nan
+Epoch [259/600] Total Loss: 94.5852
+Epoch [260/600] Step [0/17] Loss: 5.5666 Bio: 0.6293 GateEnt: nan GateDiv: nan
+Epoch [260/600] Total Loss: 94.0329
+Epoch [261/600] Step [0/17] Loss: 5.8272 Bio: 0.6724 GateEnt: nan GateDiv: nan
+Epoch [261/600] Total Loss: 95.0229
+Epoch [262/600] Step [0/17] Loss: 5.7984 Bio: 0.6397 GateEnt: nan GateDiv: nan
+Epoch [262/600] Total Loss: 94.6704
+Epoch [263/600] Step [0/17] Loss: 5.4679 Bio: 0.7182 GateEnt: nan GateDiv: nan
+Epoch [263/600] Total Loss: 94.4085
+Epoch [264/600] Step [0/17] Loss: 5.6990 Bio: 0.5937 GateEnt: nan GateDiv: nan
+Epoch [264/600] Total Loss: 95.1666
+Epoch [265/600] Step [0/17] Loss: 5.6302 Bio: 0.6510 GateEnt: nan GateDiv: nan
+Epoch [265/600] Total Loss: 95.8929
+Epoch [266/600] Step [0/17] Loss: 5.5331 Bio: 0.7388 GateEnt: nan GateDiv: nan
+Epoch [266/600] Total Loss: 97.6223
+Epoch [267/600] Step [0/17] Loss: 5.7243 Bio: 0.6529 GateEnt: nan GateDiv: nan
+Epoch [267/600] Total Loss: 94.8357
+Epoch [268/600] Step [0/17] Loss: 5.5268 Bio: 0.6314 GateEnt: nan GateDiv: nan
+Epoch [268/600] Total Loss: 93.0404
+Epoch [269/600] Step [0/17] Loss: 5.8498 Bio: 0.6749 GateEnt: nan GateDiv: nan
+Epoch [269/600] Total Loss: 94.1492
+Epoch [270/600] Step [0/17] Loss: 5.4094 Bio: 0.6432 GateEnt: nan GateDiv: nan
+Epoch [270/600] Total Loss: 94.8582
+Epoch [271/600] Step [0/17] Loss: 5.6400 Bio: 0.7406 GateEnt: nan GateDiv: nan
+Epoch [271/600] Total Loss: 94.0716
+Epoch [272/600] Step [0/17] Loss: 5.9445 Bio: 0.5714 GateEnt: nan GateDiv: nan
+Epoch [272/600] Total Loss: 93.6750
+Epoch [273/600] Step [0/17] Loss: 5.7148 Bio: 0.6593 GateEnt: nan GateDiv: nan
+Epoch [273/600] Total Loss: 94.0567
+Epoch [274/600] Step [0/17] Loss: 5.7891 Bio: 0.6434 GateEnt: nan GateDiv: nan
+Epoch [274/600] Total Loss: 94.5534
+Epoch [275/600] Step [0/17] Loss: 5.9183 Bio: 0.5858 GateEnt: nan GateDiv: nan
+Epoch [275/600] Total Loss: 96.1202
+Epoch [276/600] Step [0/17] Loss: 5.8433 Bio: 0.5729 GateEnt: nan GateDiv: nan
+Epoch [276/600] Total Loss: 94.4027
+Epoch [277/600] Step [0/17] Loss: 5.6421 Bio: 0.6383 GateEnt: nan GateDiv: nan
+Epoch [277/600] Total Loss: 95.5360
+Epoch [278/600] Step [0/17] Loss: 5.5836 Bio: 0.6818 GateEnt: nan GateDiv: nan
+Epoch [278/600] Total Loss: 95.2823
+Epoch [279/600] Step [0/17] Loss: 5.5632 Bio: 0.5783 GateEnt: nan GateDiv: nan
+Epoch [279/600] Total Loss: 94.4132
+Epoch [280/600] Step [0/17] Loss: 5.5077 Bio: 0.6023 GateEnt: nan GateDiv: nan
+Epoch [280/600] Total Loss: 93.4383
+Epoch [281/600] Step [0/17] Loss: 5.6489 Bio: 0.6156 GateEnt: nan GateDiv: nan
+Epoch [281/600] Total Loss: 95.0720
+Epoch [282/600] Step [0/17] Loss: 5.7459 Bio: 0.6577 GateEnt: nan GateDiv: nan
+Epoch [282/600] Total Loss: 94.2494
+Epoch [283/600] Step [0/17] Loss: 5.7137 Bio: 0.6534 GateEnt: nan GateDiv: nan
+Epoch [283/600] Total Loss: 94.4840
+Epoch [284/600] Step [0/17] Loss: 5.7823 Bio: 0.5614 GateEnt: nan GateDiv: nan
+Epoch [284/600] Total Loss: 93.7819
+Epoch [285/600] Step [0/17] Loss: 5.5219 Bio: 0.5815 GateEnt: nan GateDiv: nan
+Epoch [285/600] Total Loss: 94.9425
+Epoch [286/600] Step [0/17] Loss: 5.8000 Bio: 0.6789 GateEnt: nan GateDiv: nan
+Epoch [286/600] Total Loss: 94.8343
+Epoch [287/600] Step [0/17] Loss: 5.5224 Bio: 0.5835 GateEnt: nan GateDiv: nan
+Epoch [287/600] Total Loss: 94.7032
+Epoch [288/600] Step [0/17] Loss: 5.8687 Bio: 0.6092 GateEnt: nan GateDiv: nan
+Epoch [288/600] Total Loss: 94.8602
+Epoch [289/600] Step [0/17] Loss: 5.6976 Bio: 0.5675 GateEnt: nan GateDiv: nan
+Epoch [289/600] Total Loss: 93.1034
+Epoch [290/600] Step [0/17] Loss: 5.8059 Bio: 0.6220 GateEnt: nan GateDiv: nan
+Epoch [290/600] Total Loss: 95.3143
+Epoch [291/600] Step [0/17] Loss: 5.6106 Bio: 0.6709 GateEnt: nan GateDiv: nan
+Epoch [291/600] Total Loss: 93.9277
+Epoch [292/600] Step [0/17] Loss: 5.6496 Bio: 0.6581 GateEnt: nan GateDiv: nan
+Epoch [292/600] Total Loss: 93.4969
+Epoch [293/600] Step [0/17] Loss: 5.5789 Bio: 0.6177 GateEnt: nan GateDiv: nan
+Epoch [293/600] Total Loss: 93.7377
+Epoch [294/600] Step [0/17] Loss: 5.5487 Bio: 0.6172 GateEnt: nan GateDiv: nan
+Epoch [294/600] Total Loss: 94.2533
+Epoch [295/600] Step [0/17] Loss: 5.7744 Bio: 0.6953 GateEnt: nan GateDiv: nan
+Epoch [295/600] Total Loss: 94.7140
+Epoch [296/600] Step [0/17] Loss: 5.4044 Bio: 0.6444 GateEnt: nan GateDiv: nan
+Epoch [296/600] Total Loss: 94.3121
+Epoch [297/600] Step [0/17] Loss: 5.4185 Bio: 0.6164 GateEnt: nan GateDiv: nan
+Epoch [297/600] Total Loss: 93.8064
+Epoch [298/600] Step [0/17] Loss: 5.8928 Bio: 0.5969 GateEnt: nan GateDiv: nan
+Epoch [298/600] Total Loss: 93.0074
+Epoch [299/600] Step [0/17] Loss: 5.3283 Bio: 0.6672 GateEnt: nan GateDiv: nan
+Epoch [299/600] Total Loss: 93.4198
+Epoch [300/600] Step [0/17] Loss: 5.7720 Bio: 0.6431 GateEnt: nan GateDiv: nan
+Epoch [300/600] Total Loss: 93.7405
+Epoch [301/600] Step [0/17] Loss: 5.7192 Bio: 0.6587 GateEnt: nan GateDiv: nan
+Epoch [301/600] Total Loss: 94.8955
+Epoch [302/600] Step [0/17] Loss: 5.7040 Bio: 0.6221 GateEnt: nan GateDiv: nan
+Epoch [302/600] Total Loss: 94.0111
+Epoch [303/600] Step [0/17] Loss: 5.5434 Bio: 0.6199 GateEnt: nan GateDiv: nan
+Epoch [303/600] Total Loss: 95.6048
+Epoch [304/600] Step [0/17] Loss: 5.6149 Bio: 0.6158 GateEnt: nan GateDiv: nan
+Epoch [304/600] Total Loss: 94.8412
+Epoch [305/600] Step [0/17] Loss: 5.6979 Bio: 0.6563 GateEnt: nan GateDiv: nan
+Epoch [305/600] Total Loss: 94.4535
+Epoch [306/600] Step [0/17] Loss: 5.5040 Bio: 0.7471 GateEnt: nan GateDiv: nan
+Epoch [306/600] Total Loss: 94.0599
+Epoch [307/600] Step [0/17] Loss: 5.5535 Bio: 0.6868 GateEnt: nan GateDiv: nan
+Epoch [307/600] Total Loss: 93.9167
+Epoch [308/600] Step [0/17] Loss: 5.7254 Bio: 0.6724 GateEnt: nan GateDiv: nan
+Epoch [308/600] Total Loss: 94.3582
+Epoch [309/600] Step [0/17] Loss: 5.5412 Bio: 0.6281 GateEnt: nan GateDiv: nan
+Epoch [309/600] Total Loss: 93.9091
+Epoch [310/600] Step [0/17] Loss: 5.9171 Bio: 0.6958 GateEnt: nan GateDiv: nan
+Epoch [310/600] Total Loss: 95.6515
+Epoch [311/600] Step [0/17] Loss: 5.7660 Bio: 0.6587 GateEnt: nan GateDiv: nan
+Epoch [311/600] Total Loss: 94.5215
+Epoch [312/600] Step [0/17] Loss: 5.5817 Bio: 0.6328 GateEnt: nan GateDiv: nan
+Epoch [312/600] Total Loss: 96.4203
+Epoch [313/600] Step [0/17] Loss: 5.5298 Bio: 0.6334 GateEnt: nan GateDiv: nan
+Epoch [313/600] Total Loss: 94.0210
+Epoch [314/600] Step [0/17] Loss: 5.8174 Bio: 0.6699 GateEnt: nan GateDiv: nan
+Epoch [314/600] Total Loss: 92.8309
+Epoch [315/600] Step [0/17] Loss: 5.5105 Bio: 0.6208 GateEnt: nan GateDiv: nan
+Epoch [315/600] Total Loss: 92.8875
+Epoch [316/600] Step [0/17] Loss: 5.7373 Bio: 0.6636 GateEnt: nan GateDiv: nan
+Epoch [316/600] Total Loss: 94.1384
+Epoch [317/600] Step [0/17] Loss: 5.6682 Bio: 0.7030 GateEnt: nan GateDiv: nan
+Epoch [317/600] Total Loss: 95.5117
+Epoch [318/600] Step [0/17] Loss: 5.7038 Bio: 0.6639 GateEnt: nan GateDiv: nan
+Epoch [318/600] Total Loss: 94.7166
+Epoch [319/600] Step [0/17] Loss: 5.7780 Bio: 0.5623 GateEnt: nan GateDiv: nan
+Epoch [319/600] Total Loss: 93.8970
+Epoch [320/600] Step [0/17] Loss: 5.4550 Bio: 0.6429 GateEnt: nan GateDiv: nan
+Epoch [320/600] Total Loss: 93.0915
+Epoch [321/600] Step [0/17] Loss: 5.6455 Bio: 0.5704 GateEnt: nan GateDiv: nan
+Epoch [321/600] Total Loss: 93.9052
+Epoch [322/600] Step [0/17] Loss: 5.5679 Bio: 0.6280 GateEnt: nan GateDiv: nan
+Epoch [322/600] Total Loss: 93.4220
+Epoch [323/600] Step [0/17] Loss: 5.6808 Bio: 0.6520 GateEnt: nan GateDiv: nan
+Epoch [323/600] Total Loss: 94.7860
+Epoch [324/600] Step [0/17] Loss: 5.6945 Bio: 0.5489 GateEnt: nan GateDiv: nan
+Epoch [324/600] Total Loss: 94.3219
+Epoch [325/600] Step [0/17] Loss: 5.5827 Bio: 0.6044 GateEnt: nan GateDiv: nan
+Epoch [325/600] Total Loss: 93.4796
+Epoch [326/600] Step [0/17] Loss: 5.5961 Bio: 0.6048 GateEnt: nan GateDiv: nan
+Epoch [326/600] Total Loss: 95.2431
+Epoch [327/600] Step [0/17] Loss: 5.7440 Bio: 0.5799 GateEnt: nan GateDiv: nan
+Epoch [327/600] Total Loss: 94.7115
+Epoch [328/600] Step [0/17] Loss: 5.7513 Bio: 0.5481 GateEnt: nan GateDiv: nan
+Epoch [328/600] Total Loss: 93.4717
+Epoch [329/600] Step [0/17] Loss: 5.8130 Bio: 0.6859 GateEnt: nan GateDiv: nan
+Epoch [329/600] Total Loss: 93.6537
+Epoch [330/600] Step [0/17] Loss: 5.6483 Bio: 0.6239 GateEnt: nan GateDiv: nan
+Epoch [330/600] Total Loss: 93.5728
+Epoch [331/600] Step [0/17] Loss: 5.5509 Bio: 0.6989 GateEnt: nan GateDiv: nan
+Epoch [331/600] Total Loss: 94.4427
+Epoch [332/600] Step [0/17] Loss: 5.6258 Bio: 0.7054 GateEnt: nan GateDiv: nan
+Epoch [332/600] Total Loss: 94.0481
+Epoch [333/600] Step [0/17] Loss: 5.9621 Bio: 0.6705 GateEnt: nan GateDiv: nan
+Epoch [333/600] Total Loss: 94.7665
+Epoch [334/600] Step [0/17] Loss: 5.6687 Bio: 0.6888 GateEnt: nan GateDiv: nan
+Epoch [334/600] Total Loss: 93.9376
+Epoch [335/600] Step [0/17] Loss: 5.5627 Bio: 0.6477 GateEnt: nan GateDiv: nan
+Epoch [335/600] Total Loss: 93.0849
+Epoch [336/600] Step [0/17] Loss: 5.4733 Bio: 0.6596 GateEnt: nan GateDiv: nan
+Epoch [336/600] Total Loss: 93.3684
+Epoch [337/600] Step [0/17] Loss: 5.7329 Bio: 0.5115 GateEnt: nan GateDiv: nan
+Epoch [337/600] Total Loss: 92.8457
+Epoch [338/600] Step [0/17] Loss: 5.7088 Bio: 0.5924 GateEnt: nan GateDiv: nan
+Epoch [338/600] Total Loss: 94.0645
+Epoch [339/600] Step [0/17] Loss: 5.5237 Bio: 0.5598 GateEnt: nan GateDiv: nan
+Epoch [339/600] Total Loss: 93.4941
+Epoch [340/600] Step [0/17] Loss: 5.6714 Bio: 0.5900 GateEnt: nan GateDiv: nan
+Epoch [340/600] Total Loss: 93.2417
+Epoch [341/600] Step [0/17] Loss: 5.6428 Bio: 0.6914 GateEnt: nan GateDiv: nan
+Epoch [341/600] Total Loss: 93.8229
+Epoch [342/600] Step [0/17] Loss: 5.5705 Bio: 0.5688 GateEnt: nan GateDiv: nan
+Epoch [342/600] Total Loss: 93.5063
+Epoch [343/600] Step [0/17] Loss: 5.4982 Bio: 0.6523 GateEnt: nan GateDiv: nan
+Epoch [343/600] Total Loss: 93.6961
+Epoch [344/600] Step [0/17] Loss: 5.5213 Bio: 0.5936 GateEnt: nan GateDiv: nan
+Epoch [344/600] Total Loss: 94.9774
+Epoch [345/600] Step [0/17] Loss: 5.8926 Bio: 0.5987 GateEnt: nan GateDiv: nan
+Epoch [345/600] Total Loss: 95.6197
+Epoch [346/600] Step [0/17] Loss: 5.5755 Bio: 0.6539 GateEnt: nan GateDiv: nan
+Epoch [346/600] Total Loss: 94.1820
+Epoch [347/600] Step [0/17] Loss: 5.6732 Bio: 0.8031 GateEnt: nan GateDiv: nan
+Epoch [347/600] Total Loss: 93.6988
+Epoch [348/600] Step [0/17] Loss: 5.5005 Bio: 0.6359 GateEnt: nan GateDiv: nan
+Epoch [348/600] Total Loss: 94.1101
+Epoch [349/600] Step [0/17] Loss: 5.8266 Bio: 0.7485 GateEnt: nan GateDiv: nan
+Epoch [349/600] Total Loss: 94.9716
+Epoch [350/600] Step [0/17] Loss: 5.6214 Bio: 0.6252 GateEnt: nan GateDiv: nan
+Epoch [350/600] Total Loss: 95.6049
+Epoch [351/600] Step [0/17] Loss: 5.9198 Bio: 0.6308 GateEnt: nan GateDiv: nan
+Epoch [351/600] Total Loss: 93.9125
+Epoch [352/600] Step [0/17] Loss: 5.4633 Bio: 0.6197 GateEnt: nan GateDiv: nan
+Epoch [352/600] Total Loss: 93.9622
+Epoch [353/600] Step [0/17] Loss: 5.4945 Bio: 0.6330 GateEnt: nan GateDiv: nan
+Epoch [353/600] Total Loss: 95.5925
+Epoch [354/600] Step [0/17] Loss: 5.7004 Bio: 0.6551 GateEnt: nan GateDiv: nan
+Epoch [354/600] Total Loss: 92.9491
+Epoch [355/600] Step [0/17] Loss: 5.5648 Bio: 0.6101 GateEnt: nan GateDiv: nan
+Epoch [355/600] Total Loss: 94.9947
+Epoch [356/600] Step [0/17] Loss: 5.6318 Bio: 0.6659 GateEnt: nan GateDiv: nan
+Epoch [356/600] Total Loss: 93.9067
+Epoch [357/600] Step [0/17] Loss: 5.5886 Bio: 0.5901 GateEnt: nan GateDiv: nan
+Epoch [357/600] Total Loss: 94.8935
+Epoch [358/600] Step [0/17] Loss: 5.6310 Bio: 0.6328 GateEnt: nan GateDiv: nan
+Epoch [358/600] Total Loss: 93.5398
+Epoch [359/600] Step [0/17] Loss: 5.4779 Bio: 0.6981 GateEnt: nan GateDiv: nan
+Epoch [359/600] Total Loss: 92.9931
+Epoch [360/600] Step [0/17] Loss: 5.8007 Bio: 0.6370 GateEnt: nan GateDiv: nan
+Epoch [360/600] Total Loss: 93.9731
+Epoch [361/600] Step [0/17] Loss: 5.5754 Bio: 0.6095 GateEnt: nan GateDiv: nan
+Epoch [361/600] Total Loss: 93.5593
+Epoch [362/600] Step [0/17] Loss: 5.5310 Bio: 0.6405 GateEnt: nan GateDiv: nan
+Epoch [362/600] Total Loss: 93.4600
+Epoch [363/600] Step [0/17] Loss: 5.6831 Bio: 0.5752 GateEnt: nan GateDiv: nan
+Epoch [363/600] Total Loss: 93.9058
+Epoch [364/600] Step [0/17] Loss: 5.6515 Bio: 0.6489 GateEnt: nan GateDiv: nan
+Epoch [364/600] Total Loss: 93.8770
+Epoch [365/600] Step [0/17] Loss: 5.9606 Bio: 0.6833 GateEnt: nan GateDiv: nan
+Epoch [365/600] Total Loss: 92.8596
+Epoch [366/600] Step [0/17] Loss: 5.7321 Bio: 0.6476 GateEnt: nan GateDiv: nan
+Epoch [366/600] Total Loss: 94.9638
+Epoch [367/600] Step [0/17] Loss: 5.7880 Bio: 0.6610 GateEnt: nan GateDiv: nan
+Epoch [367/600] Total Loss: 94.2631
+Epoch [368/600] Step [0/17] Loss: 5.8855 Bio: 0.6107 GateEnt: nan GateDiv: nan
+Epoch [368/600] Total Loss: 93.8172
+Epoch [369/600] Step [0/17] Loss: 5.4150 Bio: 0.6296 GateEnt: nan GateDiv: nan
+Epoch [369/600] Total Loss: 94.3017
+Epoch [370/600] Step [0/17] Loss: 5.4122 Bio: 0.6247 GateEnt: nan GateDiv: nan
+Epoch [370/600] Total Loss: 93.6105
+Epoch [371/600] Step [0/17] Loss: 5.6205 Bio: 0.6771 GateEnt: nan GateDiv: nan
+Epoch [371/600] Total Loss: 93.3914
+Epoch [372/600] Step [0/17] Loss: 5.5813 Bio: 0.6123 GateEnt: nan GateDiv: nan
+Epoch [372/600] Total Loss: 94.3229
+Epoch [373/600] Step [0/17] Loss: 5.5518 Bio: 0.6153 GateEnt: nan GateDiv: nan
+Epoch [373/600] Total Loss: 93.9662
+Epoch [374/600] Step [0/17] Loss: 5.5615 Bio: 0.6223 GateEnt: nan GateDiv: nan
+Epoch [374/600] Total Loss: 94.8774
+Epoch [375/600] Step [0/17] Loss: 5.4774 Bio: 0.6535 GateEnt: nan GateDiv: nan
+Epoch [375/600] Total Loss: 93.6824
+Epoch [376/600] Step [0/17] Loss: 5.5198 Bio: 0.6232 GateEnt: nan GateDiv: nan
+Epoch [376/600] Total Loss: 93.5689
+Epoch [377/600] Step [0/17] Loss: 5.6577 Bio: 0.6380 GateEnt: nan GateDiv: nan
+Epoch [377/600] Total Loss: 93.7844
+Epoch [378/600] Step [0/17] Loss: 5.7728 Bio: 0.6465 GateEnt: nan GateDiv: nan
+Epoch [378/600] Total Loss: 92.9533
+Epoch [379/600] Step [0/17] Loss: 5.7372 Bio: 0.5836 GateEnt: nan GateDiv: nan
+Epoch [379/600] Total Loss: 92.4611
+Epoch [380/600] Step [0/17] Loss: 5.5956 Bio: 0.6340 GateEnt: nan GateDiv: nan
+Epoch [380/600] Total Loss: 92.7198
+Epoch [381/600] Step [0/17] Loss: 5.5821 Bio: 0.5657 GateEnt: nan GateDiv: nan
+Epoch [381/600] Total Loss: 92.8064
+Epoch [382/600] Step [0/17] Loss: 5.6766 Bio: 0.6260 GateEnt: nan GateDiv: nan
+Epoch [382/600] Total Loss: 92.7736
+Epoch [383/600] Step [0/17] Loss: 5.6294 Bio: 0.5674 GateEnt: nan GateDiv: nan
+Epoch [383/600] Total Loss: 93.3359
+Epoch [384/600] Step [0/17] Loss: 5.4292 Bio: 0.5787 GateEnt: nan GateDiv: nan
+Epoch [384/600] Total Loss: 93.4393
+Epoch [385/600] Step [0/17] Loss: 5.5040 Bio: 0.6368 GateEnt: nan GateDiv: nan
+Epoch [385/600] Total Loss: 94.4969
+Epoch [386/600] Step [0/17] Loss: 5.5400 Bio: 0.6270 GateEnt: nan GateDiv: nan
+Epoch [386/600] Total Loss: 93.9499
+Epoch [387/600] Step [0/17] Loss: 5.4488 Bio: 0.5284 GateEnt: nan GateDiv: nan
+Epoch [387/600] Total Loss: 93.3982
+Epoch [388/600] Step [0/17] Loss: 5.8723 Bio: 0.6642 GateEnt: nan GateDiv: nan
+Epoch [388/600] Total Loss: 95.2759
+Epoch [389/600] Step [0/17] Loss: 5.5584 Bio: 0.5993 GateEnt: nan GateDiv: nan
+Epoch [389/600] Total Loss: 94.3830
+Epoch [390/600] Step [0/17] Loss: 5.5069 Bio: 0.6372 GateEnt: nan GateDiv: nan
+Epoch [390/600] Total Loss: 94.7783
+Epoch [391/600] Step [0/17] Loss: 5.5028 Bio: 0.6316 GateEnt: nan GateDiv: nan
+Epoch [391/600] Total Loss: 93.3737
+Epoch [392/600] Step [0/17] Loss: 5.5716 Bio: 0.7365 GateEnt: nan GateDiv: nan
+Epoch [392/600] Total Loss: 93.3124
+Epoch [393/600] Step [0/17] Loss: 5.5872 Bio: 0.6773 GateEnt: nan GateDiv: nan
+Epoch [393/600] Total Loss: 93.5972
+Epoch [394/600] Step [0/17] Loss: 5.6762 Bio: 0.6271 GateEnt: nan GateDiv: nan
+Epoch [394/600] Total Loss: 93.5336
+Epoch [395/600] Step [0/17] Loss: 5.5973 Bio: 0.6830 GateEnt: nan GateDiv: nan
+Epoch [395/600] Total Loss: 93.9618
+Epoch [396/600] Step [0/17] Loss: 5.3304 Bio: 0.5762 GateEnt: nan GateDiv: nan
+Epoch [396/600] Total Loss: 91.8558
+Epoch [397/600] Step [0/17] Loss: 5.6835 Bio: 0.7184 GateEnt: nan GateDiv: nan
+Epoch [397/600] Total Loss: 93.0631
+Epoch [398/600] Step [0/17] Loss: 5.5577 Bio: 0.6501 GateEnt: nan GateDiv: nan
+Epoch [398/600] Total Loss: 94.6853
+Epoch [399/600] Step [0/17] Loss: 5.5279 Bio: 0.6423 GateEnt: nan GateDiv: nan
+Epoch [399/600] Total Loss: 94.1169
+Epoch [400/600] Step [0/17] Loss: 5.5648 Bio: 0.6287 GateEnt: nan GateDiv: nan
+Epoch [400/600] Total Loss: 93.8617
+Epoch [401/600] Step [0/17] Loss: 5.5434 Bio: 0.5950 GateEnt: nan GateDiv: nan
+Epoch [401/600] Total Loss: 94.4921
+Epoch [402/600] Step [0/17] Loss: 5.6100 Bio: 0.6430 GateEnt: nan GateDiv: nan
+Epoch [402/600] Total Loss: 94.1182
+Epoch [403/600] Step [0/17] Loss: 5.3638 Bio: 0.6594 GateEnt: nan GateDiv: nan
+Epoch [403/600] Total Loss: 93.9326
+Epoch [404/600] Step [0/17] Loss: 5.6099 Bio: 0.6354 GateEnt: nan GateDiv: nan
+Epoch [404/600] Total Loss: 93.7246
+Epoch [405/600] Step [0/17] Loss: 5.4739 Bio: 0.6134 GateEnt: nan GateDiv: nan
+Epoch [405/600] Total Loss: 92.4955
+Epoch [406/600] Step [0/17] Loss: 5.3955 Bio: 0.6763 GateEnt: nan GateDiv: nan
+Epoch [406/600] Total Loss: 93.0683
+Epoch [407/600] Step [0/17] Loss: 5.8417 Bio: 0.6226 GateEnt: nan GateDiv: nan
+Epoch [407/600] Total Loss: 93.3528
+Epoch [408/600] Step [0/17] Loss: 5.7501 Bio: 0.6858 GateEnt: nan GateDiv: nan
+Epoch [408/600] Total Loss: 93.4427
+Epoch [409/600] Step [0/17] Loss: 5.3984 Bio: 0.6132 GateEnt: nan GateDiv: nan
+Epoch [409/600] Total Loss: 92.0934
+Epoch [410/600] Step [0/17] Loss: 5.7285 Bio: 0.5641 GateEnt: nan GateDiv: nan
+Epoch [410/600] Total Loss: 93.3377
+Epoch [411/600] Step [0/17] Loss: 5.6519 Bio: 0.6393 GateEnt: nan GateDiv: nan
+Epoch [411/600] Total Loss: 93.4427
+Epoch [412/600] Step [0/17] Loss: 5.6476 Bio: 0.6206 GateEnt: nan GateDiv: nan
+Epoch [412/600] Total Loss: 93.3729
+Epoch [413/600] Step [0/17] Loss: 5.6479 Bio: 0.6037 GateEnt: nan GateDiv: nan
+Epoch [413/600] Total Loss: 92.7176
+Epoch [414/600] Step [0/17] Loss: 5.5872 Bio: 0.6303 GateEnt: nan GateDiv: nan
+Epoch [414/600] Total Loss: 93.5215
+Epoch [415/600] Step [0/17] Loss: 5.6422 Bio: 0.6148 GateEnt: nan GateDiv: nan
+Epoch [415/600] Total Loss: 93.5094
+Epoch [416/600] Step [0/17] Loss: 5.6633 Bio: 0.6940 GateEnt: nan GateDiv: nan
+Epoch [416/600] Total Loss: 92.7008
+Epoch [417/600] Step [0/17] Loss: 5.6680 Bio: 0.6199 GateEnt: nan GateDiv: nan
+Epoch [417/600] Total Loss: 92.8427
+Epoch [418/600] Step [0/17] Loss: 5.6094 Bio: 0.6053 GateEnt: nan GateDiv: nan
+Epoch [418/600] Total Loss: 92.0680
+Epoch [419/600] Step [0/17] Loss: 5.5866 Bio: 0.6129 GateEnt: nan GateDiv: nan
+Epoch [419/600] Total Loss: 93.1014
+Epoch [420/600] Step [0/17] Loss: 5.7671 Bio: 0.6377 GateEnt: nan GateDiv: nan
+Epoch [420/600] Total Loss: 92.6464
+Epoch [421/600] Step [0/17] Loss: 5.5971 Bio: 0.6419 GateEnt: nan GateDiv: nan
+Epoch [421/600] Total Loss: 93.4692
+Epoch [422/600] Step [0/17] Loss: 5.5957 Bio: 0.5943 GateEnt: nan GateDiv: nan
+Epoch [422/600] Total Loss: 93.2116
+Epoch [423/600] Step [0/17] Loss: 5.7020 Bio: 0.6816 GateEnt: nan GateDiv: nan
+Epoch [423/600] Total Loss: 93.0982
+Epoch [424/600] Step [0/17] Loss: 5.4560 Bio: 0.6610 GateEnt: nan GateDiv: nan
+Epoch [424/600] Total Loss: 93.7132
+Epoch [425/600] Step [0/17] Loss: 5.4164 Bio: 0.6165 GateEnt: nan GateDiv: nan
+Epoch [425/600] Total Loss: 93.0025
+Epoch [426/600] Step [0/17] Loss: 5.6085 Bio: 0.5928 GateEnt: nan GateDiv: nan
+Epoch [426/600] Total Loss: 92.0602
+Epoch [427/600] Step [0/17] Loss: 5.6100 Bio: 0.5883 GateEnt: nan GateDiv: nan
+Epoch [427/600] Total Loss: 92.3626
+Epoch [428/600] Step [0/17] Loss: 5.4935 Bio: 0.6139 GateEnt: nan GateDiv: nan
+Epoch [428/600] Total Loss: 95.4815
+Epoch [429/600] Step [0/17] Loss: 5.6222 Bio: 0.5958 GateEnt: nan GateDiv: nan
+Epoch [429/600] Total Loss: 93.2927
+Epoch [430/600] Step [0/17] Loss: 5.5285 Bio: 0.6219 GateEnt: nan GateDiv: nan
+Epoch [430/600] Total Loss: 93.2490
+Epoch [431/600] Step [0/17] Loss: 5.3122 Bio: 0.6058 GateEnt: nan GateDiv: nan
+Epoch [431/600] Total Loss: 93.8902
+Epoch [432/600] Step [0/17] Loss: 5.5002 Bio: 0.5852 GateEnt: nan GateDiv: nan
+Epoch [432/600] Total Loss: 92.7986
+Epoch [433/600] Step [0/17] Loss: 5.6805 Bio: 0.5881 GateEnt: nan GateDiv: nan
+Epoch [433/600] Total Loss: 93.4662
+Epoch [434/600] Step [0/17] Loss: 5.4007 Bio: 0.6678 GateEnt: nan GateDiv: nan
+Epoch [434/600] Total Loss: 93.1718
+Epoch [435/600] Step [0/17] Loss: 5.6683 Bio: 0.6693 GateEnt: nan GateDiv: nan
+Epoch [435/600] Total Loss: 92.9625
+Epoch [436/600] Step [0/17] Loss: 5.4675 Bio: 0.6645 GateEnt: nan GateDiv: nan
+Epoch [436/600] Total Loss: 92.6648
+Epoch [437/600] Step [0/17] Loss: 5.4925 Bio: 0.5451 GateEnt: nan GateDiv: nan
+Epoch [437/600] Total Loss: 93.7752
+Epoch [438/600] Step [0/17] Loss: 5.3303 Bio: 0.6124 GateEnt: nan GateDiv: nan
+Epoch [438/600] Total Loss: 93.0000
+Epoch [439/600] Step [0/17] Loss: 5.4981 Bio: 0.5948 GateEnt: nan GateDiv: nan
+Epoch [439/600] Total Loss: 92.4157
+Epoch [440/600] Step [0/17] Loss: 5.5692 Bio: 0.6380 GateEnt: nan GateDiv: nan
+Epoch [440/600] Total Loss: 92.8880
+Epoch [441/600] Step [0/17] Loss: 5.3784 Bio: 0.6086 GateEnt: nan GateDiv: nan
+Epoch [441/600] Total Loss: 93.2686
+Epoch [442/600] Step [0/17] Loss: 5.5612 Bio: 0.6032 GateEnt: nan GateDiv: nan
+Epoch [442/600] Total Loss: 92.6739
+Epoch [443/600] Step [0/17] Loss: 5.3299 Bio: 0.6179 GateEnt: nan GateDiv: nan
+Epoch [443/600] Total Loss: 92.6731
+Epoch [444/600] Step [0/17] Loss: 5.5396 Bio: 0.6983 GateEnt: nan GateDiv: nan
+Epoch [444/600] Total Loss: 92.9230
+Epoch [445/600] Step [0/17] Loss: 5.4574 Bio: 0.6375 GateEnt: nan GateDiv: nan
+Epoch [445/600] Total Loss: 93.6121
+Epoch [446/600] Step [0/17] Loss: 5.7359 Bio: 0.6237 GateEnt: nan GateDiv: nan
+Epoch [446/600] Total Loss: 92.7553
+Epoch [447/600] Step [0/17] Loss: 5.5160 Bio: 0.5962 GateEnt: nan GateDiv: nan
+Epoch [447/600] Total Loss: 93.2247
+Epoch [448/600] Step [0/17] Loss: 5.6153 Bio: 0.5835 GateEnt: nan GateDiv: nan
+Epoch [448/600] Total Loss: 94.1643
+Epoch [449/600] Step [0/17] Loss: 5.8533 Bio: 0.6353 GateEnt: nan GateDiv: nan
+Epoch [449/600] Total Loss: 94.6306
+Epoch [450/600] Step [0/17] Loss: 5.5652 Bio: 0.6274 GateEnt: nan GateDiv: nan
+Epoch [450/600] Total Loss: 93.6137
+Epoch [451/600] Step [0/17] Loss: 5.7080 Bio: 0.5961 GateEnt: nan GateDiv: nan
+Epoch [451/600] Total Loss: 93.2172
+Epoch [452/600] Step [0/17] Loss: 5.8229 Bio: 0.6316 GateEnt: nan GateDiv: nan
+Epoch [452/600] Total Loss: 93.6296
+Epoch [453/600] Step [0/17] Loss: 5.5844 Bio: 0.5859 GateEnt: nan GateDiv: nan
+Epoch [453/600] Total Loss: 92.5423
+Epoch [454/600] Step [0/17] Loss: 5.7007 Bio: 0.5742 GateEnt: nan GateDiv: nan
+Epoch [454/600] Total Loss: 93.3579
+Epoch [455/600] Step [0/17] Loss: 5.8271 Bio: 0.6234 GateEnt: nan GateDiv: nan
+Epoch [455/600] Total Loss: 92.4011
+Epoch [456/600] Step [0/17] Loss: 5.4549 Bio: 0.6272 GateEnt: nan GateDiv: nan
+Epoch [456/600] Total Loss: 92.7207
+Epoch [457/600] Step [0/17] Loss: 5.6461 Bio: 0.5939 GateEnt: nan GateDiv: nan
+Epoch [457/600] Total Loss: 94.3080
+Epoch [458/600] Step [0/17] Loss: 5.4561 Bio: 0.5921 GateEnt: nan GateDiv: nan
+Epoch [458/600] Total Loss: 91.5697
+Epoch [459/600] Step [0/17] Loss: 5.6187 Bio: 0.6431 GateEnt: nan GateDiv: nan
+Epoch [459/600] Total Loss: 93.3289
+Epoch [460/600] Step [0/17] Loss: 5.4411 Bio: 0.6259 GateEnt: nan GateDiv: nan
+Epoch [460/600] Total Loss: 93.0288
+Epoch [461/600] Step [0/17] Loss: 5.7123 Bio: 0.6003 GateEnt: nan GateDiv: nan
+Epoch [461/600] Total Loss: 92.6821
+Epoch [462/600] Step [0/17] Loss: 5.7607 Bio: 0.5820 GateEnt: nan GateDiv: nan
+Epoch [462/600] Total Loss: 92.3536
+Epoch [463/600] Step [0/17] Loss: 5.5834 Bio: 0.6210 GateEnt: nan GateDiv: nan
+Epoch [463/600] Total Loss: 93.1998
+Epoch [464/600] Step [0/17] Loss: 5.5291 Bio: 0.5894 GateEnt: nan GateDiv: nan
+Epoch [464/600] Total Loss: 92.7488
+Epoch [465/600] Step [0/17] Loss: 5.4957 Bio: 0.6437 GateEnt: nan GateDiv: nan
+Epoch [465/600] Total Loss: 92.7210
+Epoch [466/600] Step [0/17] Loss: 5.6821 Bio: 0.6408 GateEnt: nan GateDiv: nan
+Epoch [466/600] Total Loss: 92.3768
+Epoch [467/600] Step [0/17] Loss: 5.5711 Bio: 0.5913 GateEnt: nan GateDiv: nan
+Epoch [467/600] Total Loss: 92.6644
+Epoch [468/600] Step [0/17] Loss: 5.6541 Bio: 0.6679 GateEnt: nan GateDiv: nan
+Epoch [468/600] Total Loss: 91.8805
+Epoch [469/600] Step [0/17] Loss: 5.2596 Bio: 0.7701 GateEnt: nan GateDiv: nan
+Epoch [469/600] Total Loss: 92.6267
+Epoch [470/600] Step [0/17] Loss: 5.5611 Bio: 0.6695 GateEnt: nan GateDiv: nan
+Epoch [470/600] Total Loss: 92.0073
+Epoch [471/600] Step [0/17] Loss: 5.5989 Bio: 0.5635 GateEnt: nan GateDiv: nan
+Epoch [471/600] Total Loss: 92.0656
+Epoch [472/600] Step [0/17] Loss: 5.5537 Bio: 0.6370 GateEnt: nan GateDiv: nan
+Epoch [472/600] Total Loss: 93.4284
+Epoch [473/600] Step [0/17] Loss: 5.4883 Bio: 0.5727 GateEnt: nan GateDiv: nan
+Epoch [473/600] Total Loss: 91.4033
+Epoch [474/600] Step [0/17] Loss: 5.6409 Bio: 0.6831 GateEnt: nan GateDiv: nan
+Epoch [474/600] Total Loss: 92.0153
+Epoch [475/600] Step [0/17] Loss: 5.4732 Bio: 0.5754 GateEnt: nan GateDiv: nan
+Epoch [475/600] Total Loss: 91.2551
+Epoch [476/600] Step [0/17] Loss: 5.6486 Bio: 0.6958 GateEnt: nan GateDiv: nan
+Epoch [476/600] Total Loss: 92.3375
+Epoch [477/600] Step [0/17] Loss: 5.4770 Bio: 0.6783 GateEnt: nan GateDiv: nan
+Epoch [477/600] Total Loss: 92.7530
+Epoch [478/600] Step [0/17] Loss: 5.6467 Bio: 0.6142 GateEnt: nan GateDiv: nan
+Epoch [478/600] Total Loss: 93.0965
+Epoch [479/600] Step [0/17] Loss: 5.7064 Bio: 0.7148 GateEnt: nan GateDiv: nan
+Epoch [479/600] Total Loss: 92.3542
+Epoch [480/600] Step [0/17] Loss: 5.4734 Bio: 0.6317 GateEnt: nan GateDiv: nan
+Epoch [480/600] Total Loss: 93.2298
+Epoch [481/600] Step [0/17] Loss: 5.3906 Bio: 0.6055 GateEnt: nan GateDiv: nan
+Epoch [481/600] Total Loss: 93.4147
+Epoch [482/600] Step [0/17] Loss: 5.5958 Bio: 0.6026 GateEnt: nan GateDiv: nan
+Epoch [482/600] Total Loss: 93.1418
+Epoch [483/600] Step [0/17] Loss: 5.6410 Bio: 0.5729 GateEnt: nan GateDiv: nan
+Epoch [483/600] Total Loss: 91.3592
+Epoch [484/600] Step [0/17] Loss: 5.7321 Bio: 0.6298 GateEnt: nan GateDiv: nan
+Epoch [484/600] Total Loss: 91.7689
+Epoch [485/600] Step [0/17] Loss: 5.3072 Bio: 0.5995 GateEnt: nan GateDiv: nan
+Epoch [485/600] Total Loss: 92.2249
+Epoch [486/600] Step [0/17] Loss: 5.4493 Bio: 0.6298 GateEnt: nan GateDiv: nan
+Epoch [486/600] Total Loss: 93.6883
+Epoch [487/600] Step [0/17] Loss: 5.7198 Bio: 0.7283 GateEnt: nan GateDiv: nan
+Epoch [487/600] Total Loss: 93.0401
+Epoch [488/600] Step [0/17] Loss: 5.7401 Bio: 0.5258 GateEnt: nan GateDiv: nan
+Epoch [488/600] Total Loss: 92.5751
+Epoch [489/600] Step [0/17] Loss: 5.4209 Bio: 0.6572 GateEnt: nan GateDiv: nan
+Epoch [489/600] Total Loss: 92.8562
+Epoch [490/600] Step [0/17] Loss: 5.5437 Bio: 0.6996 GateEnt: nan GateDiv: nan
+Epoch [490/600] Total Loss: 92.9096
+Epoch [491/600] Step [0/17] Loss: 5.6206 Bio: 0.6370 GateEnt: nan GateDiv: nan
+Epoch [491/600] Total Loss: 92.7113
+Epoch [492/600] Step [0/17] Loss: 5.4395 Bio: 0.6461 GateEnt: nan GateDiv: nan
+Epoch [492/600] Total Loss: 92.8364
+Epoch [493/600] Step [0/17] Loss: 5.5543 Bio: 0.6812 GateEnt: nan GateDiv: nan
+Epoch [493/600] Total Loss: 92.6892
+Epoch [494/600] Step [0/17] Loss: 5.5169 Bio: 0.5941 GateEnt: nan GateDiv: nan
+Epoch [494/600] Total Loss: 92.8625
+Epoch [495/600] Step [0/17] Loss: 5.5565 Bio: 0.5899 GateEnt: nan GateDiv: nan
+Epoch [495/600] Total Loss: 93.0491
+Epoch [496/600] Step [0/17] Loss: 5.5990 Bio: 0.5976 GateEnt: nan GateDiv: nan
+Epoch [496/600] Total Loss: 92.8470
+Epoch [497/600] Step [0/17] Loss: 5.7973 Bio: 0.6332 GateEnt: nan GateDiv: nan
+Epoch [497/600] Total Loss: 93.7010
+Epoch [498/600] Step [0/17] Loss: 5.5826 Bio: 0.6323 GateEnt: nan GateDiv: nan
+Epoch [498/600] Total Loss: 91.3717
+Epoch [499/600] Step [0/17] Loss: 5.5861 Bio: 0.6726 GateEnt: nan GateDiv: nan
+Epoch [499/600] Total Loss: 92.9454
+Epoch [500/600] Step [0/17] Loss: 5.5863 Bio: 0.6203 GateEnt: nan GateDiv: nan
+Epoch [500/600] Total Loss: 92.9160
+Epoch [501/600] Step [0/17] Loss: 5.4921 Bio: 0.6147 GateEnt: nan GateDiv: nan
+Epoch [501/600] Total Loss: 91.9819
+Epoch [502/600] Step [0/17] Loss: 5.4446 Bio: 0.6108 GateEnt: nan GateDiv: nan
+Epoch [502/600] Total Loss: 92.6249
+Epoch [503/600] Step [0/17] Loss: 5.7491 Bio: 0.6705 GateEnt: nan GateDiv: nan
+Epoch [503/600] Total Loss: 92.0167
+Epoch [504/600] Step [0/17] Loss: 5.5674 Bio: 0.6540 GateEnt: nan GateDiv: nan
+Epoch [504/600] Total Loss: 91.7868
+Epoch [505/600] Step [0/17] Loss: 5.4521 Bio: 0.6860 GateEnt: nan GateDiv: nan
+Epoch [505/600] Total Loss: 92.1627
+Epoch [506/600] Step [0/17] Loss: 5.3809 Bio: 0.5974 GateEnt: nan GateDiv: nan
+Epoch [506/600] Total Loss: 92.2568
+Epoch [507/600] Step [0/17] Loss: 5.4169 Bio: 0.6138 GateEnt: nan GateDiv: nan
+Epoch [507/600] Total Loss: 91.3380
+Epoch [508/600] Step [0/17] Loss: 5.3485 Bio: 0.6226 GateEnt: nan GateDiv: nan
+Epoch [508/600] Total Loss: 92.5651
+Epoch [509/600] Step [0/17] Loss: 5.6963 Bio: 0.5995 GateEnt: nan GateDiv: nan
+Epoch [509/600] Total Loss: 93.0851
+Epoch [510/600] Step [0/17] Loss: 5.5547 Bio: 0.6636 GateEnt: nan GateDiv: nan
+Epoch [510/600] Total Loss: 92.6785
+Epoch [511/600] Step [0/17] Loss: 5.5591 Bio: 0.6087 GateEnt: nan GateDiv: nan
+Epoch [511/600] Total Loss: 92.9607
+Epoch [512/600] Step [0/17] Loss: 5.6975 Bio: 0.5521 GateEnt: nan GateDiv: nan
+Epoch [512/600] Total Loss: 93.4425
+Epoch [513/600] Step [0/17] Loss: 5.6776 Bio: 0.5763 GateEnt: nan GateDiv: nan
+Epoch [513/600] Total Loss: 91.2169
+Epoch [514/600] Step [0/17] Loss: 5.4727 Bio: 0.6453 GateEnt: nan GateDiv: nan
+Epoch [514/600] Total Loss: 92.3735
+Epoch [515/600] Step [0/17] Loss: 5.5983 Bio: 0.6249 GateEnt: nan GateDiv: nan
+Epoch [515/600] Total Loss: 92.9106
+Epoch [516/600] Step [0/17] Loss: 5.3262 Bio: 0.5737 GateEnt: nan GateDiv: nan
+Epoch [516/600] Total Loss: 91.3453
+Epoch [517/600] Step [0/17] Loss: 5.6441 Bio: 0.6408 GateEnt: nan GateDiv: nan
+Epoch [517/600] Total Loss: 92.7459
+Epoch [518/600] Step [0/17] Loss: 5.5655 Bio: 0.6553 GateEnt: nan GateDiv: nan
+Epoch [518/600] Total Loss: 93.2066
+Epoch [519/600] Step [0/17] Loss: 5.3214 Bio: 0.6516 GateEnt: nan GateDiv: nan
+Epoch [519/600] Total Loss: 92.6476
+Epoch [520/600] Step [0/17] Loss: 5.5399 Bio: 0.6221 GateEnt: nan GateDiv: nan
+Epoch [520/600] Total Loss: 91.9336
+Epoch [521/600] Step [0/17] Loss: 5.5509 Bio: 0.6354 GateEnt: nan GateDiv: nan
+Epoch [521/600] Total Loss: 93.1740
+Epoch [522/600] Step [0/17] Loss: 5.3146 Bio: 0.5825 GateEnt: nan GateDiv: nan
+Epoch [522/600] Total Loss: 92.3858
+Epoch [523/600] Step [0/17] Loss: 5.6405 Bio: 0.6768 GateEnt: nan GateDiv: nan
+Epoch [523/600] Total Loss: 92.2450
+Epoch [524/600] Step [0/17] Loss: 5.7668 Bio: 0.6351 GateEnt: nan GateDiv: nan
+Epoch [524/600] Total Loss: 92.6901
+Epoch [525/600] Step [0/17] Loss: 5.6651 Bio: 0.6582 GateEnt: nan GateDiv: nan
+Epoch [525/600] Total Loss: 93.3229
+Epoch [526/600] Step [0/17] Loss: 5.4659 Bio: 0.6105 GateEnt: nan GateDiv: nan
+Epoch [526/600] Total Loss: 92.4327
+Epoch [527/600] Step [0/17] Loss: 5.6333 Bio: 0.6250 GateEnt: nan GateDiv: nan
+Epoch [527/600] Total Loss: 93.2944
+Epoch [528/600] Step [0/17] Loss: 5.7827 Bio: 0.6058 GateEnt: nan GateDiv: nan
+Epoch [528/600] Total Loss: 93.6209
+Epoch [529/600] Step [0/17] Loss: 5.4075 Bio: 0.6423 GateEnt: nan GateDiv: nan
+Epoch [529/600] Total Loss: 92.2321
+Epoch [530/600] Step [0/17] Loss: 5.5954 Bio: 0.6361 GateEnt: nan GateDiv: nan
+Epoch [530/600] Total Loss: 92.2527
+Epoch [531/600] Step [0/17] Loss: 5.6603 Bio: 0.5773 GateEnt: nan GateDiv: nan
+Epoch [531/600] Total Loss: 92.2683
+Epoch [532/600] Step [0/17] Loss: 5.3598 Bio: 0.5997 GateEnt: nan GateDiv: nan
+Epoch [532/600] Total Loss: 92.4012
+Epoch [533/600] Step [0/17] Loss: 5.6334 Bio: 0.5590 GateEnt: nan GateDiv: nan
+Epoch [533/600] Total Loss: 92.0570
+Epoch [534/600] Step [0/17] Loss: 5.7219 Bio: 0.5762 GateEnt: nan GateDiv: nan
+Epoch [534/600] Total Loss: 92.0008
+Epoch [535/600] Step [0/17] Loss: 5.8034 Bio: 0.6040 GateEnt: nan GateDiv: nan
+Epoch [535/600] Total Loss: 92.7377
+Epoch [536/600] Step [0/17] Loss: 5.5829 Bio: 0.6334 GateEnt: nan GateDiv: nan
+Epoch [536/600] Total Loss: 93.2760
+Epoch [537/600] Step [0/17] Loss: 5.5127 Bio: 0.6479 GateEnt: nan GateDiv: nan
+Epoch [537/600] Total Loss: 92.7286
+Epoch [538/600] Step [0/17] Loss: 5.7049 Bio: 0.5391 GateEnt: nan GateDiv: nan
+Epoch [538/600] Total Loss: 92.0407
+Epoch [539/600] Step [0/17] Loss: 5.4311 Bio: 0.6521 GateEnt: nan GateDiv: nan
+Epoch [539/600] Total Loss: 91.6402
+Epoch [540/600] Step [0/17] Loss: 5.6525 Bio: 0.5929 GateEnt: nan GateDiv: nan
+Epoch [540/600] Total Loss: 92.3916
+Epoch [541/600] Step [0/17] Loss: 5.6855 Bio: 0.5763 GateEnt: nan GateDiv: nan
+Epoch [541/600] Total Loss: 92.4128
+Epoch [542/600] Step [0/17] Loss: 5.5630 Bio: 0.5450 GateEnt: nan GateDiv: nan
+Epoch [542/600] Total Loss: 91.6061
+Epoch [543/600] Step [0/17] Loss: 5.4294 Bio: 0.6682 GateEnt: nan GateDiv: nan
+Epoch [543/600] Total Loss: 91.5051
+Epoch [544/600] Step [0/17] Loss: 5.4263 Bio: 0.6156 GateEnt: nan GateDiv: nan
+Epoch [544/600] Total Loss: 92.3292
+Epoch [545/600] Step [0/17] Loss: 5.3780 Bio: 0.5966 GateEnt: nan GateDiv: nan
+Epoch [545/600] Total Loss: 91.7216
+Epoch [546/600] Step [0/17] Loss: 5.5654 Bio: 0.6663 GateEnt: nan GateDiv: nan
+Epoch [546/600] Total Loss: 91.8254
+Epoch [547/600] Step [0/17] Loss: 5.3721 Bio: 0.7396 GateEnt: nan GateDiv: nan
+Epoch [547/600] Total Loss: 93.3464
+Epoch [548/600] Step [0/17] Loss: 5.5388 Bio: 0.6529 GateEnt: nan GateDiv: nan
+Epoch [548/600] Total Loss: 92.9362
+Epoch [549/600] Step [0/17] Loss: 5.6282 Bio: 0.6149 GateEnt: nan GateDiv: nan
+Epoch [549/600] Total Loss: 92.6141
+Epoch [550/600] Step [0/17] Loss: 5.6675 Bio: 0.6225 GateEnt: nan GateDiv: nan
+Epoch [550/600] Total Loss: 92.8257
+Epoch [551/600] Step [0/17] Loss: 5.5798 Bio: 0.6386 GateEnt: nan GateDiv: nan
+Epoch [551/600] Total Loss: 93.0105
+Epoch [552/600] Step [0/17] Loss: 5.5546 Bio: 0.6006 GateEnt: nan GateDiv: nan
+Epoch [552/600] Total Loss: 93.3077
+Epoch [553/600] Step [0/17] Loss: 5.4946 Bio: 0.6286 GateEnt: nan GateDiv: nan
+Epoch [553/600] Total Loss: 91.3004
+Epoch [554/600] Step [0/17] Loss: 5.4503 Bio: 0.6308 GateEnt: nan GateDiv: nan
+Epoch [554/600] Total Loss: 91.3562
+Epoch [555/600] Step [0/17] Loss: 5.4217 Bio: 0.6645 GateEnt: nan GateDiv: nan
+Epoch [555/600] Total Loss: 92.3423
+Epoch [556/600] Step [0/17] Loss: 5.6584 Bio: 0.5949 GateEnt: nan GateDiv: nan
+Epoch [556/600] Total Loss: 91.9798
+Epoch [557/600] Step [0/17] Loss: 5.5255 Bio: 0.6227 GateEnt: nan GateDiv: nan
+Epoch [557/600] Total Loss: 91.7779
+Epoch [558/600] Step [0/17] Loss: 5.4029 Bio: 0.6880 GateEnt: nan GateDiv: nan
+Epoch [558/600] Total Loss: 92.6840
+Epoch [559/600] Step [0/17] Loss: 5.5016 Bio: 0.5661 GateEnt: nan GateDiv: nan
+Epoch [559/600] Total Loss: 91.4820
+Epoch [560/600] Step [0/17] Loss: 5.3356 Bio: 0.6539 GateEnt: nan GateDiv: nan
+Epoch [560/600] Total Loss: 92.8385
+Epoch [561/600] Step [0/17] Loss: 5.3819 Bio: 0.5874 GateEnt: nan GateDiv: nan
+Epoch [561/600] Total Loss: 91.6588
+Epoch [562/600] Step [0/17] Loss: 5.6351 Bio: 0.6737 GateEnt: nan GateDiv: nan
+Epoch [562/600] Total Loss: 91.8048
+Epoch [563/600] Step [0/17] Loss: 5.4421 Bio: 0.6036 GateEnt: nan GateDiv: nan
+Epoch [563/600] Total Loss: 92.8283
+Epoch [564/600] Step [0/17] Loss: 5.5867 Bio: 0.6146 GateEnt: nan GateDiv: nan
+Epoch [564/600] Total Loss: 92.2966
+Epoch [565/600] Step [0/17] Loss: 5.5311 Bio: 0.6635 GateEnt: nan GateDiv: nan
+Epoch [565/600] Total Loss: 92.8623
+Epoch [566/600] Step [0/17] Loss: 5.4832 Bio: 0.6044 GateEnt: nan GateDiv: nan
+Epoch [566/600] Total Loss: 92.0855
+Epoch [567/600] Step [0/17] Loss: 5.4512 Bio: 0.6139 GateEnt: nan GateDiv: nan
+Epoch [567/600] Total Loss: 92.9975
+Epoch [568/600] Step [0/17] Loss: 5.5383 Bio: 0.6051 GateEnt: nan GateDiv: nan
+Epoch [568/600] Total Loss: 91.8572
+Epoch [569/600] Step [0/17] Loss: 5.5141 Bio: 0.6714 GateEnt: nan GateDiv: nan
+Epoch [569/600] Total Loss: 93.7635
+Epoch [570/600] Step [0/17] Loss: 5.6489 Bio: 0.5868 GateEnt: nan GateDiv: nan
+Epoch [570/600] Total Loss: 92.0865
+Epoch [571/600] Step [0/17] Loss: 5.3845 Bio: 0.5793 GateEnt: nan GateDiv: nan
+Epoch [571/600] Total Loss: 93.0649
+Epoch [572/600] Step [0/17] Loss: 5.4032 Bio: 0.5936 GateEnt: nan GateDiv: nan
+Epoch [572/600] Total Loss: 92.1382
+Epoch [573/600] Step [0/17] Loss: 5.4500 Bio: 0.6288 GateEnt: nan GateDiv: nan
+Epoch [573/600] Total Loss: 91.9664
+Epoch [574/600] Step [0/17] Loss: 5.6667 Bio: 0.6210 GateEnt: nan GateDiv: nan
+Epoch [574/600] Total Loss: 91.3326
+Epoch [575/600] Step [0/17] Loss: 5.4567 Bio: 0.6199 GateEnt: nan GateDiv: nan
+Epoch [575/600] Total Loss: 92.5828
+Epoch [576/600] Step [0/17] Loss: 5.5340 Bio: 0.7294 GateEnt: nan GateDiv: nan
+Epoch [576/600] Total Loss: 92.5285
+Epoch [577/600] Step [0/17] Loss: 5.5624 Bio: 0.6239 GateEnt: nan GateDiv: nan
+Epoch [577/600] Total Loss: 91.1947
+Epoch [578/600] Step [0/17] Loss: 5.5780 Bio: 0.6239 GateEnt: nan GateDiv: nan
+Epoch [578/600] Total Loss: 91.4920
+Epoch [579/600] Step [0/17] Loss: 5.5206 Bio: 0.6518 GateEnt: nan GateDiv: nan
+Epoch [579/600] Total Loss: 92.6116
+Epoch [580/600] Step [0/17] Loss: 5.6596 Bio: 0.6311 GateEnt: nan GateDiv: nan
+Epoch [580/600] Total Loss: 90.8993
+Epoch [581/600] Step [0/17] Loss: 5.6637 Bio: 0.6741 GateEnt: nan GateDiv: nan
+Epoch [581/600] Total Loss: 93.1676
+Epoch [582/600] Step [0/17] Loss: 5.4510 Bio: 0.5936 GateEnt: nan GateDiv: nan
+Epoch [582/600] Total Loss: 91.0781
+Epoch [583/600] Step [0/17] Loss: 5.6949 Bio: 0.6239 GateEnt: nan GateDiv: nan
+Epoch [583/600] Total Loss: 92.4794
+Epoch [584/600] Step [0/17] Loss: 5.3525 Bio: 0.6448 GateEnt: nan GateDiv: nan
+Epoch [584/600] Total Loss: 92.1517
+Epoch [585/600] Step [0/17] Loss: 5.5110 Bio: 0.5686 GateEnt: nan GateDiv: nan
+Epoch [585/600] Total Loss: 93.0845
+Epoch [586/600] Step [0/17] Loss: 5.5344 Bio: 0.5924 GateEnt: nan GateDiv: nan
+Epoch [586/600] Total Loss: 91.3500
+Epoch [587/600] Step [0/17] Loss: 5.8384 Bio: 0.6112 GateEnt: nan GateDiv: nan
+Epoch [587/600] Total Loss: 92.6683
+Epoch [588/600] Step [0/17] Loss: 5.4789 Bio: 0.5889 GateEnt: nan GateDiv: nan
+Epoch [588/600] Total Loss: 91.9802
+Epoch [589/600] Step [0/17] Loss: 5.4473 Bio: 0.6302 GateEnt: nan GateDiv: nan
+Epoch [589/600] Total Loss: 90.7998
+Epoch [590/600] Step [0/17] Loss: 5.5690 Bio: 0.6552 GateEnt: nan GateDiv: nan
+Epoch [590/600] Total Loss: 91.4781
+Epoch [591/600] Step [0/17] Loss: 5.5038 Bio: 0.6352 GateEnt: nan GateDiv: nan
+Epoch [591/600] Total Loss: 91.9610
+Epoch [592/600] Step [0/17] Loss: 5.2697 Bio: 0.6212 GateEnt: nan GateDiv: nan
+Epoch [592/600] Total Loss: 91.1433
+Epoch [593/600] Step [0/17] Loss: 5.7167 Bio: 0.5812 GateEnt: nan GateDiv: nan
+Epoch [593/600] Total Loss: 92.7547
+Epoch [594/600] Step [0/17] Loss: 5.5151 Bio: 0.6569 GateEnt: nan GateDiv: nan
+Epoch [594/600] Total Loss: 92.4936
+Epoch [595/600] Step [0/17] Loss: 5.5470 Bio: 0.6160 GateEnt: nan GateDiv: nan
+Epoch [595/600] Total Loss: 91.9593
+Epoch [596/600] Step [0/17] Loss: 5.6490 Bio: 0.5367 GateEnt: nan GateDiv: nan
+Epoch [596/600] Total Loss: 91.5926
+Epoch [597/600] Step [0/17] Loss: 5.3446 Bio: 0.5934 GateEnt: nan GateDiv: nan
+Epoch [597/600] Total Loss: 92.5442
+Epoch [598/600] Step [0/17] Loss: 5.5774 Bio: 0.5781 GateEnt: nan GateDiv: nan
+Epoch [598/600] Total Loss: 92.2528
+Epoch [599/600] Step [0/17] Loss: 5.5151 Bio: 0.5916 GateEnt: nan GateDiv: nan
+Epoch [599/600] Total Loss: 91.6391
+
+=== Loss Summary ===
+  Epoch   1: 118.8726
+  Epoch 151: 96.3185
+  Epoch 301: 93.7405
+  Epoch 451: 93.6137
+  Epoch 600: 91.6391
+  Delta (last 25% = 150 ep): -1.9746
+  If delta > -1.0, model has converged
+linear training complete.
+=== extract clusters: Fri Sep 11 18:06:57 EDT 2026 ===
+[dataloader] Loaded bio-anchors from /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/anchors/bio_anchors_BRCA_gsva_H40.csv: torch.Size([1031, 40])
+saved /gpfs/research/fangroup/ug25b/BIOS/BIOS_v2/BRCA/results/subtyping_results/BIOS/v2_benchmark_600ep_2026-09-10/clusters.csv  (1031 patients, 5 clusters, sizes {0: 221, 1: 181, 2: 235, 3: 210, 4: 184})
+=== DONE Fri Sep 11 18:07:14 EDT 2026 ===
